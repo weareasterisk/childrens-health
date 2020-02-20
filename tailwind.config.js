@@ -14,6 +14,8 @@ module.exports = {
 
       black: '#000',
       white: '#fff',
+      
+      lightblue: '#A2E7EB',
 
       gray: {
         100: '#f7fafc',
@@ -38,17 +40,7 @@ module.exports = {
         800: '#9c4221',
         900: '#7b341e',
       },
-      yellow: {
-        100: '#fffff0',
-        200: '#fefcbf',
-        300: '#faf089',
-        400: '#f6e05e',
-        500: '#ecc94b',
-        600: '#d69e2e',
-        700: '#b7791f',
-        800: '#975a16',
-        900: '#744210',
-      },
+      yellow: "#FFB819",
       green: {
         100: '#f0fff4',
         200: '#c6f6d5',
@@ -60,17 +52,7 @@ module.exports = {
         800: '#276749',
         900: '#22543d',
       },
-      teal: {
-        100: '#e6fffa',
-        200: '#b2f5ea',
-        300: '#81e6d9',
-        400: '#4fd1c5',
-        500: '#38b2ac',
-        600: '#319795',
-        700: '#2c7a7b',
-        800: '#285e61',
-        900: '#234e52',
-      },
+      teal: "#62B4C5",
       blue: {
         100: '#ebf8ff',
         200: '#bee3f8',
@@ -119,6 +101,9 @@ module.exports = {
     spacing: {
       px: '1px',
       '0': '0',
+      '.25': '.25rem',
+      '.5': '.5rem',
+      '.75': '.75rem',
       '1': '1rem',
       '1.25': '1.25rem',
       '1.5': '1.5rem',
@@ -347,6 +332,7 @@ module.exports = {
       default: '0.25rem',
       md: '0.375rem',
       lg: '0.5rem',
+      xl: '.75rem',
       full: '9999px',
     },
     borderWidth: {
@@ -355,6 +341,7 @@ module.exports = {
       '2': '2px',
       '4': '4px',
       '8': '8px',
+      '10': '10px'
     },
     boxShadow: {
       xs: '0 0 0 1px rgba(0, 0, 0, 0.05)',
@@ -368,7 +355,10 @@ module.exports = {
       outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
       none: 'none',
     },
-    container: {},
+    container: {
+      center: true,
+      padding: "2.5rem"
+    },
     cursor: {
       auto: 'auto',
       default: 'default',
@@ -397,7 +387,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        'HelveticaNeue',
+        'Roboto',
         'system-ui',
         '-apple-system',
         'BlinkMacSystemFont',
@@ -431,7 +421,7 @@ module.exports = {
       hairline: '100',
       thin: '200',
       light: '300',
-      normal: '400',
+      normal: '300',
       medium: '500',
       semibold: '600',
       bold: '700',
@@ -444,10 +434,12 @@ module.exports = {
       full: '100%',
       screen: '100vh',
     }),
-    inset: {
+    inset: (theme, {negative}) => ({
       '0': '0',
+      ...theme('spacing'),
+      ...negative(theme('spacing')),
       auto: 'auto',
-    },
+    }),
     letterSpacing: {
       tighter: '-0.05em',
       tight: '-0.025em',
@@ -487,6 +479,7 @@ module.exports = {
       screen: '100vh',
     },
     maxWidth: (theme, { breakpoints }) => ({
+      ...theme('spacing'),
       none: 'none',
       xs: '20rem',
       sm: '24rem',
@@ -506,10 +499,11 @@ module.exports = {
       full: '100%',
       screen: '100vh',
     },
-    minWidth: {
+    minWidth: (theme) => ({
       '0': '0',
+      ...theme('spacing'),
       full: '100%',
-    },
+    }),
     objectPosition: {
       bottom: 'bottom',
       center: 'center',
@@ -545,7 +539,10 @@ module.exports = {
       '11': '11',
       '12': '12',
     },
-    padding: theme => theme('spacing'),
+    padding: (theme, { negative }) => ({
+      ...theme('spacing'),
+      ...negative(theme('spacing')),
+    }),
     placeholderColor: theme => theme('colors'),
     stroke: {
       current: 'currentColor',
@@ -590,7 +587,13 @@ module.exports = {
     }),
     zIndex: {
       auto: 'auto',
+      '-1': '-1',
       '0': '0',
+      '1': '1',
+      '2': '2',
+      '3': '3',
+      '4': '4',
+      '5': '5',
       '10': '10',
       '20': '20',
       '30': '30',

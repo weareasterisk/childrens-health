@@ -3,6 +3,16 @@ const cssnano = require('cssnano')
 
 const isProd = process.env.NODE_ENV === "production"
 
+const browsers = isProd ? [
+  ">0.2%",
+  "not dead",
+  "not op_mini all"
+] : [
+  "last 1 chrome version",
+  "last 1 firefox version",
+  "last 1 safari version"
+]
+
 module.exports = {
   modules: true,
   plugins: [
@@ -18,11 +28,7 @@ module.exports = {
       features: {
           'nesting-rules': true
       },
-      browsers: [
-          '> 1%',
-          'last 2 versions',
-          'Firefox ESR',
-      ]
+      browsers: browsers
     }),
 
     isProd 
