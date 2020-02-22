@@ -1,1 +1,0 @@
-export type Children = JSX.Element | Array<JSX.Element> | undefined | Array<undefined> | Element | Array<Element> | object
