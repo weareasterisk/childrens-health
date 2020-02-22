@@ -1,20 +1,16 @@
+import { About } from './sections/About'
+import { BetweenLandingAndAbout } from './sections/BetweenLandingAndAbout'
+import { BetweenSponsorsAndContact } from './sections/BetweenSponsorsAndContact'
+import { ContactSection } from './sections/Footer'
+import { css, Global } from '@emotion/core'
+import { Faq } from './sections/Faq'
+import { Landing } from './sections/Landing'
+import { Schedule } from './sections/Schedule'
+import { SmartSection, breakpoints, mediaQueries } from './components/Foundation'
+import { Sponsors } from './sections/Sponsors'
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
-import { css, Global } from '@emotion/core'
-import { FaqItem } from "./components/FaqItem"
-import content from "./content"
-import { ContactSection } from './sections/Footer'
-import { BetweenSponsorsAndContact } from './sections/BetweenSponsorsAndContact'
-import { Sponsors } from './sections/Sponsors'
-import { Schedule } from './sections/Schedule'
-import { BetweenLandingAndAbout } from './sections/BetweenLandingAndAbout'
-import { About } from './sections/About'
-import { Landing } from './sections/Landing'
-import { SectionHeading, SmartSection, ContentContainer, breakpoints, mediaQueries } from './components/Foundation'
-import { Faq } from './sections/Faq'
 import styled from '@emotion/styled'
-import Drawer from 'rc-drawer'
-
 
 const NavLink = styled.a(({ marginRight = "48px" }) => {
   return `
@@ -24,7 +20,7 @@ const NavLink = styled.a(({ marginRight = "48px" }) => {
     text-decoration: none;
     display: block;
     width: fit-content;
-    margin-right: ${marginRight};
+    // margin-right: ${marginRight};
   `
 })
 
@@ -40,6 +36,16 @@ const NavLink = styled.a(({ marginRight = "48px" }) => {
     ${mediaQueries[2]} {
       max-width: 1440px;
       display: flex;
+    }
+    > a {
+      height: 100%;
+      display: grid;
+      place-items: center;
+      padding: 0px 24px;
+      transition: background-color 200ms;
+      &:hover, &:focus {
+        background: #d52215;
+      }
     }
   `
 
@@ -101,6 +107,9 @@ const Entrypoint = () => {
         box-sizing: border-box;
         font-family: "Roboto", sans-serif;
       }
+      html {
+        scroll-behavior: smooth;
+      }
     `,
     root: css`
       // display: grid;
@@ -122,23 +131,23 @@ const Entrypoint = () => {
   return (
     <>
     <Global styles={styles.global} />
-    {
-      navMenuOpen && (
-        <NavMobileMenu>
-          <NavLink marginRight="0px" href="#about" onClick={toggleNav}>About</NavLink>
-          <NavLink marginRight="0px" href="#faq" onClick={toggleNav}>FAQ</NavLink>
-          <NavLink marginRight="0px" href="#schedule" onClick={toggleNav}>Schedule</NavLink>
-          <NavLink marginRight="0px" href="#sponsors" onClick={toggleNav}>Sponsors</NavLink>
-          <NavLink marginRight="0px" href="#contact" onClick={toggleNav}>Contact</NavLink>
-        </NavMobileMenu>
-      )
-    }
       <div css={styles.root}>
         <Header>
           <NavMobile>
             <NavMobileMenuButton onClick={toggleNav}>
               <i className={navMenuOpen ? "fas fa-times" : "fas fa-bars"}></i>
             </NavMobileMenuButton>
+            {
+              navMenuOpen && (
+                <NavMobileMenu>
+                  <NavLink marginRight="0px" href="#about" onClick={toggleNav}>About</NavLink>
+                  <NavLink marginRight="0px" href="#faq" onClick={toggleNav}>FAQ</NavLink>
+                  <NavLink marginRight="0px" href="#schedule" onClick={toggleNav}>Schedule</NavLink>
+                  <NavLink marginRight="0px" href="#sponsors" onClick={toggleNav}>Sponsors</NavLink>
+                  <NavLink marginRight="0px" href="#contact" onClick={toggleNav}>Contact</NavLink>
+                </NavMobileMenu>
+              )
+            }
           </NavMobile>
           <Nav>
             <NavLink href="#about">About</NavLink>

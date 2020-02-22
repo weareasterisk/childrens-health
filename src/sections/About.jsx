@@ -11,6 +11,7 @@ const AboutContentContainer = styled.div`
   justify-content: flex-start;
   grid-gap: 56px;
   grid-row-gap: 90px;
+  align-content: flex-start;
   ${mediaQueries[2]} {
     grid-template-columns: 420px 1fr;
   }
@@ -25,14 +26,14 @@ const AboutContent = styled.div`
 export const About = () => {
   const [firstParagraph, ...everythingElse] = content.about.body
   const aboutContent = everythingElse.map((paragraph, i) => <Text key={`aboutContent#${i}`}>
-        {paragraph}
-      </Text>)
+    {paragraph}
+  </Text>)
   return <>
     <SectionHeading>
       About
     </SectionHeading>
     <AboutContentContainer>
-      <ImageFrameAlt imgSrc={aboutImage}/>
+      <ImageFrameAlt imgSrc={aboutImage} />
       <AboutContent>
         <SubHeading>{content.about.heading}</SubHeading>
         <Text>
