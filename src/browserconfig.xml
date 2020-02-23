@@ -2,8 +2,8 @@
 <browserconfig>
     <msapplication>
         <tile>
-            <!-- <square150x150logo src="https://cdn.weareasterisk.com/event-assets/earthxhack/favicons/mstile-150x150.png?v=A0mMjO03Nx"/> -->
-            <!-- <square310x310logo src="https://cdn.weareasterisk.com/event-assets/earthxhack/favicons/mstile-310x310.png?v=A0mMjO03Nx"/> -->
+            <square150x150logo src="assets/mstile-150x150.png"/>
+            <square310x310logo src="assets/mstile-310x310.png"/>
             <TileColor>#2b5797</TileColor>
         </tile>
     </msapplication>
