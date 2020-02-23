@@ -8,9 +8,11 @@ import { Landing } from './sections/Landing'
 import { Schedule } from './sections/Schedule'
 import { SmartSection, breakpoints, mediaQueries } from './components/Foundation'
 import { Sponsors } from './sections/Sponsors'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import ReactDOM from 'react-dom'
 import styled from '@emotion/styled'
+
+import ReactPixel from "react-facebook-pixel"
 
 const NavLink = styled.a(({ marginRight = "48px" }) => {
   return `
@@ -127,6 +129,12 @@ const Entrypoint = () => {
   const toggleNav = () => {
     setNavMobileMenuOpen(!navMenuOpen)
   }
+
+  useEffect(() => {
+    ReactPixel.init("839278906541304")
+    ReactPixel.pageView()
+  }, [])
+
 
   return (
     <>
