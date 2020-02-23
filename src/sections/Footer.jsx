@@ -21,11 +21,7 @@ const HelloText = styled.h2`
 
 const LinkContainer = styled.div`
   margin-top: 32px;
-  > a {
-    display: inline-block;
-    width: content-fit;
-    margin-bottom: 8px;
-  }
+  
 `
 
 const Column = styled.div`
@@ -60,6 +56,36 @@ const ContactFooter = styled.div`
     margin-top: 300px;
   }
 `
+
+const LinksRow = styled.div`
+  display: flex;
+  > * {
+    margin-right: 8px;
+  }
+`
+
+const SocialLink = styled(Link)`
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-content: center;
+  justify-content: flex-start;
+  width: content-fit;
+  margin-bottom: 4px;
+  border-bottom: none;
+  cursor: pointer;
+  > i {
+    font-size: 24px;
+  }
+  > * {
+    margin-right: 8px;
+  }
+
+  > span {
+    margin-top: 3px;
+  }
+  
+`
+
 
 export const ContactSection = () => {
   return (
@@ -103,21 +129,33 @@ export const ContactSection = () => {
             Stay in the loop and keep track of the cool things we're trying to do.
           </Text>
           <LinkContainer>
-            <Link>@Facebook</Link>
+            <SocialLink href="https://facebook.com/asteriskevents">
+              <i className="fab fa-facebook-square"></i>
+              <span>Facebook</span>
+            </SocialLink>
             <br />
-            <Link>@Twitter</Link>
+            <SocialLink href="https://twitter.com/helloasterisk">
+              <i className="fab fa-twitter-square"></i>
+              <span>Twitter</span>
+            </SocialLink>
             <br />
-            <Link>@Instagram</Link>
+            <SocialLink href="https://instagram.com/helloasterisk">
+              <i className="fab fa-instagram-square"></i>
+              <span>Instagram</span>
+            </SocialLink>
           </LinkContainer>
         </Column>
       </ColumnContainer>
       <ContactFooter>
         <Text>
-          © 2019 Asterisk. Made with ❤️ in Dallas.
+          © 2020 Asterisk. Made with ❤️ in Dallas.
         </Text>
-        <Link>
-          Code of Conduct
-        </Link>
+        <LinksRow>
+          <Link href="https://weareasterisk.com/terms">Terms</Link>
+          <Link href="https://weareasterisk.com/privacy">Privacy</Link>
+          <Link href="https://weareasterisk.com/sales">Sales</Link>
+          <Link href="https://weareasterisk.com/ethics">Ethics</Link>
+        </LinksRow>
       </ContactFooter>
     </ContactContainer>
   )

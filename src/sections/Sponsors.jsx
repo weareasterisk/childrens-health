@@ -18,7 +18,16 @@ const SponsorsContainer = styled.div`
 
 export const Sponsors = () => {
 
-  const sponsors = content.sponsors.map((sponsor, i) => <Image key={sponsor.sponsorName} imgSrc={sponsor.imageSrc} imgAlt={sponsor.sponsorName} height="120px" fit="contain" />)
+  const sponsors = content.sponsors.map((sponsor, i) => {
+    const key = `${sponsor.name}#${i}`
+    return <Image
+      key={key}
+      imgSrc={sponsor.imageSrc}
+      imgAlt={sponsor.sponsorName}
+      height="120px"
+      fit="contain"
+      />
+  })
 
   return <>
     <SectionHeading>

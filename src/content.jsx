@@ -143,6 +143,14 @@ export default {
         skill sets to cover all the bases of a great idea.
       </>
     },
+    {
+      question: <>
+        I still have questions...
+      </>,
+      answer: <>
+        Shoot us an email at <Link href="mailto:hello@weareasterisk.com?subject=Hello! I have a few questions about the Children's Health Hackathon...">hello@weareasterisk.com</Link> and we'll be happy to help you!
+      </>
+    },
   ],
   saturdaySchedule: [
     {
