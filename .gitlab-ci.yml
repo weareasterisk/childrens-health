@@ -1,0 +1,46 @@
+################################################################
+# Template for Node.js Single Page Application CI/CD
+# Assumes `npm run build` will build application into build/
+# VARIABLES MUST BE FILLED OUT FOR THIS TO FUNCTION PROPERLY
+################################################################
+image: node:12-alpine
+
+stages:
+  - build
+  - deploy
+
+variables:
+############# DO NOT EDIT #############
+  DOCKER_DRIVER: overlay2             #
+#######################################
+
+build-pack:
+  stage: build
+  variables:
+    GENERATE_SOURCEMAPS: "false"
+  before_script:
+    - yarn install
+  script:
+    - CI=false yarn build
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1d
+  only:
+    - master
+
+deploy-production:
+  image: python:alpine
+  stage: deploy
+  dependencies:
+    - build-pack
+  script:
+    - pip install awscli
+    - aws s3 sync dist/ s3://$S3_BUCKET_PRODUCTION/ --include "*" --delete
+    - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_PRODUCTION_ID --paths "/*"
+    - echo "Deployed to production environment"
+  only:
+    - master
+  environment:
+    name: Production
+    url: $PRODUCTION_URL
