@@ -5,7 +5,6 @@ import Chevron from "../assets/chevron.png"
 import { keyframes } from '@emotion/core'
 import { Text, SubHeading, mediaQueries, breakpoints } from './Foundation'
 import styled from '@emotion/styled'
-import { useWindowSize } from "@react-hook/window-size"
 
 const fadeIn = keyframes`
   0% {
@@ -44,6 +43,9 @@ const ChevronButton = styled.button`
     background: none;
     border: none;
     cursor: pointer;
+    ${mediaQueries[2]} {
+      display: none;
+    }
     img {
       transition: transform 200ms;
       &.active {
@@ -52,23 +54,29 @@ const ChevronButton = styled.button`
     }
   `
 
+const FaqAnswerText = styled(Text)`
+  display: none;
+  ${mediaQueries[2]} {
+    display: block;
+  }
+
+  &.is-expanded {
+    display: block;
+  }
+`
+
 export const FaqItem = ({ question, answer }) => {
 
   const [isExpanded, setIsExpanded] = React.useState(false)
-  const [width] = useWindowSize()
-
-  const shouldRender = width < breakpoints[2]
 
   return (
     <FaqItemContainer>
-      {shouldRender && (
-        <ChevronButton onClick={e => setIsExpanded(!isExpanded)}>
-          <img src={Chevron} className={isExpanded ? "active" : ""} alt=""/>
-        </ChevronButton>
-      )}
+      <ChevronButton onClick={e => setIsExpanded(!isExpanded)}>
+        <img src={Chevron} className={isExpanded ? "active" : ""} alt=""/>
+      </ChevronButton>
       <FaqItemContent>
         <SubHeading onClick={e => setIsExpanded(!isExpanded)}>{question}</SubHeading>
-        {(isExpanded || !shouldRender) && <Text>{answer}</Text>}
+        <FaqAnswerText className={isExpanded ? "is-expanded" : ""}>{answer}</FaqAnswerText>
       </FaqItemContent>
     </FaqItemContainer>
   )
