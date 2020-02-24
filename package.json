@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
+    "@babel/plugin-transform-arrow-functions": "^7.8.3",
     "@babel/preset-env": "^7.8.4",
     "@babel/preset-react": "^7.8.3",
     "@emotion/babel-preset-css-prop": "^10.0.27",
@@ -75,9 +76,9 @@
   },
   "browserslist": {
     "production": [
+      "last 2 version",
       ">0.2%",
-      "not dead",
-      "not op_mini all"
+      "IE 11"
     ],
     "development": [
       "last 1 chrome version",
