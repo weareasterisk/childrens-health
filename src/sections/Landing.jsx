@@ -65,6 +65,23 @@ const date = <DateContainer>
   <div><span css={visuallyHiddenCss}>Location: </span>Mavs Gaming Hub, Texas</div>
 </DateContainer>
 
+const Links = () => {
+  return (
+    <FancyLinks>
+      <FancyLink href="https://astr.sk/childrens-apply" backgroundColor="#ED2939" id="apply">
+        Apply here!
+      </FancyLink>
+      <FillerDiv />
+      <FancyLink href="https://astr.sk/childrens-volunteer" backgroundColor="#62B4C5" id="volunteer">
+        Volunteering
+      </FancyLink>
+      <FancyLink href="https://astr.sk/childrens-mentor" backgroundColor="#9C8DC3" id="mentor">
+        Mentoring
+      </FancyLink>
+    </FancyLinks>
+  )
+}
+
 const FancyLinks = styled.div`
   display: grid;
   display: -ms-grid;
@@ -107,16 +124,10 @@ export class Landing extends React.Component {
     const attend = document.getElementById("apply")
     const volunteer = document.getElementById("volunteer")
     const mentor = document.getElementById("mentor")
-    const mobileAttend = document.getElementById("mobile-apply")
-    const mobileVolunteer = document.getElementById("mobile-volunteer")
-    const mobileMentor = document.getElementById("mobile-mentor")
 
     this.setupPixelEvent(attend, "attend")
     this.setupPixelEvent(volunteer, "volunteer")
     this.setupPixelEvent(mentor, "mentor")
-    this.setupPixelEvent(mobileAttend, "atend")
-    this.setupPixelEvent(mobileVolunteer, "volunteer")
-    this.setupPixelEvent(mobileMentor, "mentor")
   }
 
   setupPixelEvent(element, name) {
@@ -135,17 +146,7 @@ export class Landing extends React.Component {
           <DesktopLeftColumn>
             <Logo />
             {date}
-            <FancyLinks>
-              <FancyLink backgroundColor="#ED2939" id="apply">
-                Apply here!
-              </FancyLink>
-              <FancyLink backgroundColor="#62B4C5" id="volunteer">
-                Volunteering
-              </FancyLink>
-              <FancyLink backgroundColor="#9C8DC3" id="mentor">
-                Mentoring
-              </FancyLink>
-            </FancyLinks>
+            <Links/>
           </DesktopLeftColumn>
           <LandingImageContainer>
             <ImageFrame imgSrc={landingPhoto}/>
@@ -154,18 +155,7 @@ export class Landing extends React.Component {
         <MobileView>
           <Logo />
           {date}
-          <FancyLinks>
-            <FancyLink backgroundColor="#ED2939" id="mobile-apply">
-              Apply here!
-            </FancyLink>
-            <FillerDiv></FillerDiv>
-            <FancyLink backgroundColor="#62B4C5" id="mobile-volunteer">
-              Volunteering
-            </FancyLink>
-            <FancyLink backgroundColor="#9C8DC3" id="mobile-mentor">
-              Mentoring
-            </FancyLink>
-          </FancyLinks>
+          <Links/>
           <ImageFrame imgSrc={landingPhoto}/>
         </MobileView>
       </>

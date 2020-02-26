@@ -9,27 +9,29 @@ export default {
     </>,
     body: [
       <>
-        As one of the largest healthcare systems in the United States dedicated solely
-        to the care of children and adolescents under the age of 21, the Childrens
-        Health Care Delivery Innovation Lab is seeking your help to continue innovating the next
-        generation of patient care through hosting a hackathon designed to prototype and test
-        solutions to some of the biggest problems in pediatric healthcare. 
+        As the eighth-largest pediatric health care provider in the country, Children’s 
+        Health has a long-standing commitment to the North Texas community that includes 
+        not only high-quality patient care but also advocacy, education and preventative 
+        care. As part of our ongoing promise to the community, Children’s Health has 
+        created the Children’s Health Care Delivery Lab to seek newer and more innovative 
+        ways of providing care to our patients. 
       </>,
       <>
-        Centering around the themes of access to care and improving patient throughput,
-        the Care Innovation Delivery Lab is looking for your ideas! We invite
-        all interested to apply for our hackathon and learn from our doctors,
-        patient advocates, and other staff members about some of the challenges and
-        problems encountered through our experience serving patients. Help us build
-        prototypes and new ideas to solve some of the biggest problems we encounter during
-        our quest to provide the best possible healthcare for our community. 
+        Centering around the themes of <b>access to care and improving patient throughput</b>, 
+        the Care Innovation Delivery Lab is looking for your ideas! We invite all those 
+        who are interested to apply for our hackathon and learn from our doctors, 
+        patient advocates, and other team members about how we can make life better 
+        for children by generating innovative solutions that transform how children 
+        receive care.  We want your help building prototypes and creating new ideas that 
+        will lead to the next wave of clinical breakthroughs in pediatric care. 
       </>,
       <>
-        We look forward to welcoming you to the Mavs Gaming Hub in Dallas, TX on
-        March 28th and 29th to help us innovate the future of healthcare for
-        those who desperately need it - free food, snacks, drinks, and an innovative
-        environment will be provided to help you come up with the ideas that
-        could change our approach to solving some of the biggest problems in pediatric care!
+        We look forward to welcoming you to the <Link href="https://g.page/mavsgg?share">
+        Mavs Gaming Hub in Dallas, TX</Link> on Saturday, 
+        March 28 and Sunday, March 29 to help us improve the future of pediatric health care. 
+        Meals, snacks, drinks, and an innovative environment will be provided to help you 
+        come up with the ideas needed to problem-solve current challenges within the 
+        pediatric health care landscape.
       </>
     ]
   },
@@ -83,7 +85,8 @@ export default {
       answer: <>
         Mentoring and judging is restricted to Children’s Health staff or affiliates,
         but anyone can volunteer to help out at the event, and we look forward
-        to having you there! Simply fill out the forms above and we’ll be in touch (link to form).
+        to having you there! Simply fill out the <Link href="https://astr.sk/childrens-volunteer">
+        form here</Link> and we’ll be in touch.
       </>
     },
     {
@@ -100,8 +103,9 @@ export default {
         When is the event?
       </>,
       answer: <>
-        The event will take place on March 28th and 29th, from 9am March 28th until
-        3pm March 29th. The venue will remain open overnight for you to hack through the night!
+        The event will take place on Saturday, March 28 from 10 a.m. - 10 p.m. and Sunday, 
+        March 29 from 7 a.m .- 4 p.m.  The venue will be closed overnight, but you can keep 
+        hacking elsewhere!
       </>
     },
     {
