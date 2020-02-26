@@ -109,6 +109,9 @@ const FillerDiv = styled.div`
   @media (min-width: 370px) {
     display: block;
   }
+  ${mediaQueries[2]} {
+    display: none;
+  }
   ${ieMediaQuery} {
     display: none;
   }
