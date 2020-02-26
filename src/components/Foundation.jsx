@@ -7,6 +7,7 @@ export const breakpoints = [576, 768, 992, 1200, 1440]
 
 export const mediaQueries = breakpoints.map(bp => `@media (min-width: ${bp}px)`)
 export const ieMediaQuery = `@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)`
+export const edgeMediaQuery = `@supports (-ms-ime-align:auto)`
 
 export const  visuallyHiddenCss = css`
   position: absolute !important;
@@ -84,6 +85,12 @@ const ImageContainer = styled.div(({ height = "150px", width = "100%", columnPos
   height: ${height};
   width: ${width};
   ${ieMediaQuery} {
+    -ms-grid-column: ${columnPos};
+    max-width: ${ieMaxWidth};
+    max-height: ${ieMaxHeight};
+    padding: ${iePadding};
+  }
+  ${edgeMediaQuery} {
     -ms-grid-column: ${columnPos};
     max-width: ${ieMaxWidth};
     max-height: ${ieMaxHeight};

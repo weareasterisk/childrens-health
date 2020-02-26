@@ -1,6 +1,6 @@
 import React from 'react'
 import content from '../content'
-import { SectionHeading, mediaQueries, Text, SubHeading, ieMediaQuery } from '../components/Foundation'
+import { SectionHeading, mediaQueries, Text, SubHeading, ieMediaQuery, edgeMediaQuery } from '../components/Foundation'
 import { ImageFrameAlt } from '../components/ImageFrameAlt'
 import aboutImage from "../assets/child-2.png"
 import styled from '@emotion/styled'
@@ -20,6 +20,9 @@ const AboutContentContainer = styled.div`
   ${ieMediaQuery} {
     display: flex;
   }
+  ${edgeMediaQuery} {
+    display: flex;
+  }
 `
 
 const AboutContent = styled.div`
@@ -27,6 +30,14 @@ const AboutContent = styled.div`
   grid-gap: 32px;
   max-width: 600px;
   ${ieMediaQuery} {
+    -ms-grid-column: 2;
+    margin-left: 32px;
+    max-width: 520px;
+    > * {
+      margin-bottom: 24px;
+    }
+  }
+  ${edgeMediaQuery} {
     -ms-grid-column: 2;
     margin-left: 32px;
     max-width: 520px;

@@ -1,6 +1,6 @@
 import React from 'react'
 import { ImageFrame } from '../components/ImageFrame'
-import { FancyLink, visuallyHiddenCss, mediaQueries, ieMediaQuery } from '../components/Foundation'
+import { FancyLink, visuallyHiddenCss, mediaQueries, ieMediaQuery, edgeMediaQuery } from '../components/Foundation'
 import { Logo } from '../components/Logo'
 import styled from '@emotion/styled'
 import ReactPixel from "react-facebook-pixel"
@@ -10,6 +10,12 @@ const LandingImageContainer = styled.div`
   -ms-grid-column: 2;
   
   ${ieMediaQuery} {
+    width: 420px;
+    height: 300px;
+    margin-left: 160px;
+  }
+
+  ${edgeMediaQuery} {
     width: 420px;
     height: 300px;
     margin-left: 160px;
@@ -49,6 +55,12 @@ const MobileView = styled.div`
   // grid-template-columns: 1fr;
   align-items: flex-start;
   ${ieMediaQuery} {
+    display: block;
+    > * {
+      margin-bottom: 24px;
+    }
+  }
+  ${edgeMediaQuery} {
     display: block;
     > * {
       margin-bottom: 24px;
@@ -96,6 +108,12 @@ const FancyLinks = styled.div`
       margin-right: 16px;
     }
   }
+  ${edgeMediaQuery} {
+    display: block;
+    > * {
+      margin-bottom: 24px;
+    }
+  }
   ${mediaQueries[2]} {
     display: flex;
     > * {
@@ -113,6 +131,9 @@ const FillerDiv = styled.div`
     display: none;
   }
   ${ieMediaQuery} {
+    display: none;
+  }
+  ${edgeMediaQuery} {
     display: none;
   }
 `

@@ -1,6 +1,6 @@
 import React from 'react'
 import content from '../content'
-import { SectionHeading, mediaQueries, SubHeading, Text, ieMediaQuery } from '../components/Foundation'
+import { SectionHeading, mediaQueries, SubHeading, Text, ieMediaQuery, edgeMediaQuery } from '../components/Foundation'
 import styled from '@emotion/styled'
 
 const ScheduleItem = styled.div`
@@ -14,10 +14,16 @@ const LeftText = styled(Text)`
   ${ieMediaQuery} {
     -ms-grid-column: 1;
   }
+  ${edgeMediaQuery} {
+    -ms-grid-column: 1;
+  }
 `
 
 const RightText = styled(Text)`
   ${ieMediaQuery} {
+    -ms-grid-column: 2;
+  }
+  ${edgeMediaQuery} {
     -ms-grid-column: 2;
   }
 `
@@ -50,6 +56,12 @@ const DaySchedule = styled.div(({ columnPos }) => {
         margin-bottom: 16px;
       }
     }
+    ${edgeMediaQuery} {
+      -ms-grid-column: ${columnPos};
+      > * {
+        margin-bottom: 16px;
+      }
+    }
   `
 })
 
@@ -61,6 +73,9 @@ const Schedules = styled.div`
     -ms-grid-columns: 1fr 1fr;
   }
   ${ieMediaQuery} {
+    display: block;
+  }
+  ${edgeMediaQuery} {
     display: block;
   }
 `

@@ -3,7 +3,7 @@ import css from '@emotion/css'
 import PropTypes from 'prop-types'
 import Chevron from "../assets/chevron.png"
 import { keyframes } from '@emotion/core'
-import { Text, SubHeading, mediaQueries, breakpoints, ieMediaQuery } from './Foundation'
+import { Text, SubHeading, mediaQueries, breakpoints, ieMediaQuery, edgeMediaQuery } from './Foundation'
 import styled from '@emotion/styled'
 
 const fadeIn = keyframes`
@@ -21,20 +21,32 @@ const FaqItemContent = styled.div`
     width: 100%;
     max-width: 500px;
   }
+
+  ${edgeMediaQuery} {
+    width: 100%;
+    max-width: 500px;
+  }
 `
 
 const FaqItemContainer = styled.div`
+
   display: grid;
   display: -ms-grid;
   grid-template-columns: 52px 1fr;
   -ms-grid-columns: 52px 1fr;
   grid-gap: 8px;
   align-content: flex-start;
+
   ${mediaQueries[2]} {
     grid-template-columns: 1fr;
   }
 
   ${ieMediaQuery} {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  ${edgeMediaQuery} {
     display: flex;
     justify-content: flex-start;
   }
@@ -58,6 +70,11 @@ const ChevronButton = styled.button`
       display: none;
     }
     ${ieMediaQuery} {
+      max-width: 52px;
+      min-width: 52px;
+      width: 52px;
+    }
+    ${edgeMediaQuery} {
       max-width: 52px;
       min-width: 52px;
       width: 52px;

@@ -1,7 +1,7 @@
 import React from 'react'
 import css from '@emotion/css'
 import asteriskLogo from "../assets/asterisk-logo.png"
-import { Link, SubHeading, Text, mediaQueries, ieMediaQuery } from '../components/Foundation'
+import { Link, SubHeading, Text, mediaQueries, ieMediaQuery, edgeMediaQuery } from '../components/Foundation'
 import styled from '@emotion/styled'
 
 
@@ -9,6 +9,9 @@ const HelloContainer = styled.div`
   display: flex;
   align-items: center;
   ${ieMediaQuery} {
+    margin-bottom: 32px;
+  }
+  ${edgeMediaQuery} {
     margin-bottom: 32px;
   }
 `
@@ -38,10 +41,16 @@ const LeftColumn = styled(Column)`
   ${ieMediaQuery} {
     -ms-grid-column: 1;
   }
+  ${edgeMediaQuery} {
+    -ms-grid-column: 1;
+  }
 `
 
 const RightColumn = styled(Column)`
   ${ieMediaQuery} {
+    -ms-grid-column: 2;
+  }
+  ${edgeMediaQuery} {
     -ms-grid-column: 2;
   }
 `
@@ -56,6 +65,9 @@ const ColumnContainer = styled.div`
     grid-gap: 128px;
   }
   ${ieMediaQuery} {
+    display: block;
+  }
+  ${edgeMediaQuery} {
     display: block;
   }
 `

@@ -1,5 +1,5 @@
 import React from 'react'
-import { SectionHeading, mediaQueries, ieMediaQuery, breakpoints } from '../components/Foundation'
+import { SectionHeading, mediaQueries, ieMediaQuery, breakpoints, edgeMediaQuery } from '../components/Foundation'
 import { FaqItem } from '../components/FaqItem'
 import content from '../content'
 import styled from '@emotion/styled'
@@ -15,6 +15,14 @@ const FaqItems = styled.div`
   }
 
   ${ieMediaQuery} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    > * {
+      width: ${breakpoints[2]}px;
+    }
+  }
+  ${edgeMediaQuery} {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

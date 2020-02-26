@@ -1,7 +1,7 @@
 import React from 'react'
 import content from '../content'
 import css from '@emotion/css'
-import { SectionHeading, Image, mediaQueries, ieMediaQuery } from '../components/Foundation'
+import { SectionHeading, Image, mediaQueries, ieMediaQuery, edgeMediaQuery } from '../components/Foundation'
 import styled from '@emotion/styled'
 
 const SponsorsContainer = styled.div`
@@ -17,6 +17,11 @@ const SponsorsContainer = styled.div`
     -ms-grid-columns: (minmax(250px, 1fr))[auto-fit]
   }
   ${ieMediaQuery} {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  ${edgeMediaQuery} {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
