@@ -1,10 +1,20 @@
 import React from 'react'
 import { ImageFrame } from '../components/ImageFrame'
-import { FancyLink, visuallyHiddenCss, mediaQueries } from '../components/Foundation'
+import { FancyLink, visuallyHiddenCss, mediaQueries, ieMediaQuery } from '../components/Foundation'
 import { Logo } from '../components/Logo'
 import styled from '@emotion/styled'
 import ReactPixel from "react-facebook-pixel"
 import landingPhoto from "../assets/child-1.png"
+
+const LandingImageContainer = styled.div`
+  -ms-grid-column: 2;
+  
+  ${ieMediaQuery} {
+    width: 420px;
+    height: 300px;
+    margin-left: 160px;
+  }
+`
 
 const DateContainer = styled.div`
   font-size: 24px;
@@ -18,24 +28,32 @@ const DesktopView = styled.div`
   display: none;
   ${mediaQueries[2]} {
     display: grid;
+    display: -ms-grid;
     grid-gap: 150px;
     grid-template-columns: 2fr 3fr;
+    -ms-grid-columns: 2fr 3fr;
   }
 `
 
 const DesktopLeftColumn = styled.div`
-  display: grid;
-  grid-gap: 33px;
-  justify-content: flex-start;
-  align-content: flex-start;
+  > * {
+    margin-bottom: 33px;
+  }
 `
 
 const MobileView = styled.div`
   grid-gap: 24px;
   grid-row-gap: 36px;
   display: grid;
+  display: -ms-grid;
   // grid-template-columns: 1fr;
   align-items: flex-start;
+  ${ieMediaQuery} {
+    display: block;
+    > * {
+      margin-bottom: 24px;
+    }
+  }
   ${mediaQueries[2]} {
     grid-row-gap: 64px;
     display: none;
@@ -49,14 +67,23 @@ const date = <DateContainer>
 
 const FancyLinks = styled.div`
   display: grid;
+  display: -ms-grid;
   grid-gap: 16px;
   @media (min-width: 370px) {
     grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+  }
+  ${ieMediaQuery} {
+    display: flex;
+    > * {
+      margin-right: 16px;
+    }
   }
   ${mediaQueries[2]} {
-    align-items: flex-start;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: flex-start;
+    display: flex;
+    > * {
+      margin-right: 16px;
+    }
   } 
 `
 
@@ -64,6 +91,9 @@ const FillerDiv = styled.div`
   display: none;
   @media (min-width: 370px) {
     display: block;
+  }
+  ${ieMediaQuery} {
+    display: none;
   }
 `
 
@@ -117,7 +147,9 @@ export class Landing extends React.Component {
               </FancyLink>
             </FancyLinks>
           </DesktopLeftColumn>
-          <ImageFrame imgSrc={landingPhoto}/>
+          <LandingImageContainer>
+            <ImageFrame imgSrc={landingPhoto}/>
+          </LandingImageContainer>
         </DesktopView>
         <MobileView>
           <Logo />
