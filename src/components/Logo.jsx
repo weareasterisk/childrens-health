@@ -14,6 +14,7 @@ const Image = styled.img`
 const Subtitle = styled.p`
   font-size: 24px;
   transition: font-size 200ms;
+  margin-top: ${96/2}px;
   ${mediaQueries[2]} {
     font-size: 36px;
   }
