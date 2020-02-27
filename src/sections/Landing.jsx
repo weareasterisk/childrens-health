@@ -87,9 +87,9 @@ const Links = () => {
       <FancyLink href="https://astr.sk/childrens-volunteer" backgroundColor="#62B4C5" id="volunteer">
         Volunteering
       </FancyLink>
-      <FancyLink href="https://astr.sk/childrens-mentor" backgroundColor="#9C8DC3" id="mentor">
+      {/* <FancyLink href="https://astr.sk/childrens-mentor" backgroundColor="#9C8DC3" id="mentor">
         Mentoring
-      </FancyLink>
+      </FancyLink> */}
     </FancyLinks>
   )
 }
@@ -147,11 +147,11 @@ export class Landing extends React.Component {
   componentDidMount() {
     const attend = document.getElementById("apply")
     const volunteer = document.getElementById("volunteer")
-    const mentor = document.getElementById("mentor")
+    // const mentor = document.getElementById("mentor")
 
     this.setupPixelEvent(attend, "attend")
     this.setupPixelEvent(volunteer, "volunteer")
-    this.setupPixelEvent(mentor, "mentor")
+    // this.setupPixelEvent(mentor, "mentor")
   }
 
   setupPixelEvent(element, name) {
