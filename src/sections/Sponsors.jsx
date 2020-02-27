@@ -36,7 +36,7 @@ const SponsorImage = styled(Image)`
 
 export const Sponsors = () => {
 
-  const sponsors = content.sponsors.map((sponsor, i) => {
+  const sponsors = content.sponsors ? content.sponsors.map((sponsor, i) => {
     const key = `${sponsor.name}#${i}`
     return <SponsorImage
       key={key}
@@ -48,7 +48,7 @@ export const Sponsors = () => {
       iePadding="16px"
       fit="contain"
       />
-  })
+  }) : ""
 
   return <>
     <SectionHeading>

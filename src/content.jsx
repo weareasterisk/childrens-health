@@ -158,200 +158,144 @@ export default {
   ],
   saturdaySchedule: [
     {
-      time: <>
-        13:00
-      </>,
-      details: <>
-        This is an event
-      </>
+      time: "8:45 - 10:15 AM",
+      details: "Breakfast"
     },
     {
-      time: <>
-        13:00
-      </>,
-      details: <>
-        This is an event
-      </>
+      time: "9:00 - 10:15 AM",
+      details: "Registration"
     },
     {
-      time: <>
-        13:00
-      </>,
-      details: <>
-        This is an event
-      </>
+      time: "10:00 - 10:30 AM",
+      details: "Opening Ceremony"
     },
     {
-      time: <>
-        13:00
-      </>,
-      details: <>
-        This is an event
-      </>
+      time: "10:45 - 11:45 AM",
+      details: "Challenge Overview Session"
     },
     {
-      time: <>
-        13:00
-      </>,
-      details: <>
-        This is an event
-      </>
+      time: "12:00 PM",
+      details: "Hacking Begins"
     },
     {
-      time: <>
-        13:00
-      </>,
-      details: <>
-        This is an event
-      </>
+      time: "12:30 - 1:30 PM",
+      details: "Lunch"
     },
     {
-      time: <>
-        13:00
-      </>,
-      details: <>
-        This is an event
-      </>
+      time: "12:45 - 1:15 PM",
+      details: "Team Building Session"
     },
     {
-      time: <>
-        13:00
-      </>,
-      details: <>
-        This is an event
-      </>
+      time: "1:15 - 1:45 PM",
+      details: "Ideation Session"
     },
     {
-      time: <>
-        13:00
-      </>,
-      details: <>
-        This is an event
-      </>
+      time: "3:00 - 3:30 PM",
+      details: "Workshop"
     },
     {
-      time: <>
-        13:00
-      </>,
-      details: <>
-        This is an event
-      </>
+      time: "4:00 - 4:30 PM",
+      details: "Workshop"
     },
+    {
+      time: "5:00 - 6:00 PM",
+      details: "Activity: Free Throw Competition"
+    },
+    {
+      time: "6:00 - 7:30 PM",
+      details: "Dinner"
+    },
+    {
+      time: "8:00 - 9:00 PM",
+      details: "Activity: Trivia/Kahoot"
+    }
   ],
   sundaySchedule: [
     {
-      time: <>
-        13:00
-      </>,
-      details: <>
-        This is an event
-      </>
+      time: "8:00 AM",
+      details: "Venue Re-Opens"
     },
     {
-      time: <>
-        13:00
-      </>,
-      details: <>
-        This is an event
-      </>
+      time: "8:00 - 9:30 AM",
+      details: "Light Refreshments"
     },
     {
-      time: <>
-        13:00
-      </>,
-      details: <>
-        This is an event
-      </>
+      time: "9:30 - 10:00 AM",
+      details: "Pitch Workshop"
     },
     {
-      time: <>
-        13:00
-      </>,
-      details: <>
-        This is an event
-      </>
+      time: "11:00 AM",
+      details: "Submissions Due"
     },
     {
-      time: <>
-        13:00
-      </>,
-      details: <>
-        This is an event
-      </>
+      time: "11:15 - 11:45 AM",
+      details: "Judges Briefing"
     },
     {
-      time: <>
-        13:00
-      </>,
-      details: <>
-        This is an event
-      </>
+      time: "12:00 PM",
+      details: "Hacking Ends"
     },
     {
-      time: <>
-        13:00
-      </>,
-      details: <>
-        This is an event
-      </>
+      time: "11:30 AM - 1:00 PM",
+      details: "Brunch"
     },
     {
-      time: <>
-        13:00
-      </>,
-      details: <>
-        This is an event
-      </>
+      time: "12:30 - 1:30 PM",
+      details: "Expo (1h for judging)"
     },
     {
-      time: <>
-        13:00
-      </>,
-      details: <>
-        This is an event
-      </>
+      time: "1:15 - 1:45 PM",
+      details: "Final Judges Briefing"
     },
     {
-      time: <>
-        13:00
-      </>,
-      details: <>
-        This is an event
-      </>
+      time: "1:45 - 2:15 PM",
+      details: "Final Pitch Briefing"
     },
+    {
+      time: "2:30 - 3:30 PM",
+      details: "Final Pitches"
+    },
+    {
+      time: "3:15 - 3:30 PM",
+      details: "Closing Ceremony"
+    },
+    {
+      time: "3:30 - 3:45 PM",
+      details: "Awards"
+    }
   ],
   sponsors: [
-    {
-      imageSrc: images['childrens-health-logo'],
-      sponsorName: "Children's Health"
-    },
-    {
-      imageSrc: images['childrens-health-logo'],
-      sponsorName: "Children's Health"
-    },
-    {
-      imageSrc: images['childrens-health-logo'],
-      sponsorName: "Children's Health"
-    },
-    {
-      imageSrc: images['childrens-health-logo'],
-      sponsorName: "Children's Health"
-    },
-    {
-      imageSrc: images['childrens-health-logo'],
-      sponsorName: "Children's Health"
-    },
-    {
-      imageSrc: images['childrens-health-logo'],
-      sponsorName: "Children's Health"
-    },
-    {
-      imageSrc: images['childrens-health-logo'],
-      sponsorName: "Children's Health"
-    },
-    {
-      imageSrc: images['childrens-health-logo'],
-      sponsorName: "Children's Health"
-    },
+    // {
+    //   imageSrc: images['childrens-health-logo'],
+    //   sponsorName: "Children's Health"
+    // },
+    // {
+    //   imageSrc: images['childrens-health-logo'],
+    //   sponsorName: "Children's Health"
+    // },
+    // {
+    //   imageSrc: images['childrens-health-logo'],
+    //   sponsorName: "Children's Health"
+    // },
+    // {
+    //   imageSrc: images['childrens-health-logo'],
+    //   sponsorName: "Children's Health"
+    // },
+    // {
+    //   imageSrc: images['childrens-health-logo'],
+    //   sponsorName: "Children's Health"
+    // },
+    // {
+    //   imageSrc: images['childrens-health-logo'],
+    //   sponsorName: "Children's Health"
+    // },
+    // {
+    //   imageSrc: images['childrens-health-logo'],
+    //   sponsorName: "Children's Health"
+    // },
+    // {
+    //   imageSrc: images['childrens-health-logo'],
+    //   sponsorName: "Children's Health"
+    // },
   ]
 }
