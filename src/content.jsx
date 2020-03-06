@@ -125,7 +125,7 @@ export default {
       </>,
       answer: <>
         We'll have a scheduled time where people can form teams after the opening ceremony.
-        Before then, join us at the Asterisk Attendees Page (link)!
+        Before then, join <b>find-a-team</b> channel on the slack for this event <Link href="https://astr.sk/childrens-slack">here!</Link>
       </>
     },
     {
