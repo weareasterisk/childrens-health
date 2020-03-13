@@ -3,6 +3,18 @@ import styled from '@emotion/styled'
 import { visuallyHiddenCss, mediaQueries } from './Foundation'
 import childrensHealthLogo from "../assets/childrens-health-logo.png"
 
+export const Logo = () => {
+  return (
+    <LogoContainer>
+      <VisuallHiddenTitle>
+        Children's Health: Innovating Healthcare Hackathon
+      </VisuallHiddenTitle>
+      <Image src={childrensHealthLogo} alt="Children's Health Logo"/>
+      <Subtitle>Innovating Healthcare Hackathon</Subtitle>
+    </LogoContainer>
+  )
+}
+
 const Image = styled.img`
   height: 54px;
   transition: height 200ms;
@@ -14,6 +26,7 @@ const Image = styled.img`
 const Subtitle = styled.p`
   font-size: 24px;
   transition: font-size 200ms;
+  margin-top: ${96/2}px;
   ${mediaQueries[2]} {
     font-size: 36px;
   }
@@ -26,15 +39,3 @@ const LogoContainer = styled.div`
 const VisuallHiddenTitle = styled.h1`
   ${visuallyHiddenCss}
 `
-
-export const Logo = () => {
-  return (
-    <LogoContainer>
-      <VisuallHiddenTitle>
-        Children's Health Hackathon
-      </VisuallHiddenTitle>
-      <Image src={childrensHealthLogo} alt="Children's Health Logo"/>
-      <Subtitle>Hackathon</Subtitle>
-    </LogoContainer>
-  )
-}

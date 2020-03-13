@@ -6,6 +6,8 @@ import css from '@emotion/css'
 export const breakpoints = [576, 768, 992, 1200, 1440]
 
 export const mediaQueries = breakpoints.map(bp => `@media (min-width: ${bp}px)`)
+export const ieMediaQuery = `@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)`
+export const edgeMediaQuery = `@supports (-ms-ime-align:auto)`
 
 export const  visuallyHiddenCss = css`
   position: absolute !important;
@@ -58,6 +60,7 @@ export const FancyLink = styled.a(({backgroundColor = "#ddd"}) => {
     border-radius: 10px;
     background: ${backgroundColor};
     text-align: center;
+    white-space: nowrap;
   `
 })
 
@@ -77,9 +80,22 @@ export const ContentContainer = styled.div`
   }
 `
 
-const ImageContainer = styled.div(({ height = "150px", width = "100%" }) => `
+const ImageContainer = styled.div(({ height = "150px", width = "100%", columnPos, ieMaxWidth, ieMaxHeight, iePadding }) => `
+  position: relative;  
   height: ${height};
   width: ${width};
+  ${ieMediaQuery} {
+    -ms-grid-column: ${columnPos};
+    max-width: ${ieMaxWidth};
+    max-height: ${ieMaxHeight};
+    padding: ${iePadding};
+  }
+  ${edgeMediaQuery} {
+    -ms-grid-column: ${columnPos};
+    max-width: ${ieMaxWidth};
+    max-height: ${ieMaxHeight};
+    padding: ${iePadding};
+  }
 `)
 
 const ContainedImage = styled.img(({fit = "cover"}) => `
@@ -88,9 +104,16 @@ const ContainedImage = styled.img(({fit = "cover"}) => `
   width: 100%;
 `)
 
-export const Image = ({ height, width, fit, imgSrc, imgAlt }) => {
+export const Image = ({ height, width, fit, imgSrc, imgAlt, columnPos, ieMaxWidth, ieMaxHeight, iePadding }) => {
   return (
-    <ImageContainer height={height} width={width}>
+    <ImageContainer
+      height={height}
+      width={width}
+      ieMaxWidth={ieMaxWidth}
+      ieMaxHeight={ieMaxHeight}
+      iePadding={iePadding}
+      columnPos={columnPos}
+    >
       <ContainedImage src={imgSrc} fit={fit} alt={imgAlt} />
     </ImageContainer>
   )

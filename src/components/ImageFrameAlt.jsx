@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import { ContentContainer } from './Foundation'
+import { ContentContainer, ieMediaQuery, edgeMediaQuery } from './Foundation'
 
 const imagePlaceholder = "https://via.placeholder.com/150"
 
@@ -9,6 +9,14 @@ const Root = styled.div`
   height: 100%;
   width: 100%;
   max-width: 420px;
+  ${ieMediaQuery} {
+    height: 560px;
+    width: 400px;
+  }
+  ${edgeMediaQuery} {
+    height: 560px;
+    width: 400px;
+  }
 `
 
 const ImageContainer = styled.div`
@@ -24,6 +32,18 @@ const ContainedImage = styled.img`
   height: 100%;
   width: 100%;
   display: block;
+  ${ieMediaQuery} {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  ${edgeMediaQuery} {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 `
 
 const Backframe = styled.div`

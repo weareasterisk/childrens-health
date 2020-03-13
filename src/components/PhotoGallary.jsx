@@ -11,12 +11,15 @@ const Container = styled.div`
   
   const Images = styled.div`
     display: grid;
+    display: -ms-grid;
     width: ${breakpoints[2]}px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
     margin: 0 auto;
     position: relative;
     height: 165px;
     * {
+      position: relative;
       z-index: 2;
     }
 `
@@ -37,14 +40,14 @@ export const PhotoGallery = ({ imgSrcs = [], altMode = false}) => {
 
   const images = imgSrcs.map((imgSrc, i) => {
     const key = `${imgSrc}#${i}`
-    return <Image  key={key} imgSrc={imgSrc} width="250px" height="165px" />
+    return <Image key={key} imgSrc={imgSrc} width="250px" height="165px" columnPos={i+1} />
   })
 
   return (
     <Container>
       <Images>
-        {images}
         <Backdrop altMode={altMode} />
+        {images}
       </Images>
     </Container>
   )

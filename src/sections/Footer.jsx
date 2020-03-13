@@ -1,13 +1,19 @@
 import React from 'react'
 import css from '@emotion/css'
 import asteriskLogo from "../assets/asterisk-logo.png"
-import { Link, SubHeading, Text, mediaQueries } from '../components/Foundation'
+import { Link, SubHeading, Text, mediaQueries, ieMediaQuery, edgeMediaQuery } from '../components/Foundation'
 import styled from '@emotion/styled'
 
 
 const HelloContainer = styled.div`
   display: flex;
   align-items: center;
+  ${ieMediaQuery} {
+    margin-bottom: 32px;
+  }
+  ${edgeMediaQuery} {
+    margin-bottom: 32px;
+  }
 `
 
 const HelloText = styled.h2`
@@ -17,6 +23,7 @@ const HelloText = styled.h2`
     font-size: 48px;
     margin-left: 32px;
   }
+  
 `
 
 const LinkContainer = styled.div`
@@ -28,16 +35,40 @@ const Column = styled.div`
   > * {
     margin-bottom: 16px;
   }
+`
 
-  
+const LeftColumn = styled(Column)`
+  ${ieMediaQuery} {
+    -ms-grid-column: 1;
+  }
+  ${edgeMediaQuery} {
+    -ms-grid-column: 1;
+  }
+`
+
+const RightColumn = styled(Column)`
+  ${ieMediaQuery} {
+    -ms-grid-column: 2;
+  }
+  ${edgeMediaQuery} {
+    -ms-grid-column: 2;
+  }
 `
 
 const ColumnContainer = styled.div`
   display: grid;
+  display: -ms-grid;
   grid-gap: 32px;
   ${mediaQueries[2]} {
     grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
     grid-gap: 128px;
+  }
+  ${ieMediaQuery} {
+    display: block;
+  }
+  ${edgeMediaQuery} {
+    display: block;
   }
 `
 
@@ -111,7 +142,7 @@ export const ContactSection = () => {
         <HelloText>Hello!</HelloText>
       </HelloContainer>
       <ColumnContainer>
-        <Column>
+        <LeftColumn>
           <SubHeading>Let's connect</SubHeading>
           <Text>
             We'd love to hear from you! We are a friendly bunch and open to discussing new ideas,
@@ -122,8 +153,8 @@ export const ContactSection = () => {
               hello@weareasterisk.com
             </Link>
           </LinkContainer>
-        </Column>
-        <Column>
+        </LeftColumn>
+        <RightColumn>
           <SubHeading>Follow us</SubHeading>
           <Text>
             Stay in the loop and keep track of the cool things we're trying to do.
@@ -144,7 +175,7 @@ export const ContactSection = () => {
               <span>Instagram</span>
             </SocialLink>
           </LinkContainer>
-        </Column>
+        </RightColumn>
       </ColumnContainer>
       <ContactFooter>
         <Text>

@@ -41,8 +41,10 @@ const NavLink = styled.a(({ marginRight = "48px" }) => {
     }
     > a {
       height: 100%;
-      display: grid;
-      place-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 70px;
       padding: 0px 24px;
       transition: background-color 200ms;
       &:hover, &:focus {
