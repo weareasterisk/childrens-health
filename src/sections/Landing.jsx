@@ -141,7 +141,7 @@ const FillerDiv = styled.div`
 const YellowBox = styled.div`
   width: 100%;
   height: auto;
-  border: 5px solid yellow;
+  border: 5px solid #fcd900;
   padding: 1rem;
   p {
     padding-bottom: .5rem;
