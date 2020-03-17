@@ -73,8 +73,8 @@ const MobileView = styled.div`
 `
 
 const date = <DateContainer>
-  <div><span css={visuallyHiddenCss}>Date: </span>March 28-29, 2020</div>
-  <div><span css={visuallyHiddenCss}>Location: </span>Mavs Gaming Hub, Texas</div>
+  {/* <div><span css={visuallyHiddenCss}>Date: </span>March 28-29, 2020</div> */}
+  {/* <div><span css={visuallyHiddenCss}>Location: </span>Mavs Gaming Hub, Texas</div> */}
 </DateContainer>
 
 const Links = () => {
@@ -170,7 +170,7 @@ export class Landing extends React.Component {
           <DesktopLeftColumn>
             <Logo />
             {date}
-            <Links/>
+            {/* <Links/> */}
           </DesktopLeftColumn>
           <LandingImageContainer>
             <ImageFrame imgSrc={landingPhoto}/>

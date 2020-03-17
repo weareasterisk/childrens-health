@@ -179,7 +179,7 @@ export const ContactSection = () => {
       </ColumnContainer>
       <ContactFooter>
         <Text>
-          © 2020 Asterisk. Made with ❤️ in Dallas.
+        © {new Date().getFullYear()} Asterisk. Made with ❤️ in Dallas.
         </Text>
         <LinksRow>
           <Link href="https://weareasterisk.com/terms">Terms</Link>

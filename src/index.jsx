@@ -179,9 +179,9 @@ const Entrypoint = () => {
         <SmartSection backgroundColor="#62B4C5" fontColor="white" id="faq">
           <Faq />
         </SmartSection>
-        <SmartSection backgroundColor="#004A97" fontColor="white" id="schedule">
+        {/* <SmartSection backgroundColor="#004A97" fontColor="white" id="schedule">
           <Schedule />
-        </SmartSection>
+        </SmartSection> */}
         <SmartSection id="sponsors">
           <Sponsors />
         </SmartSection>
