@@ -1,6 +1,6 @@
 import React from 'react'
 import { ImageFrame } from '../components/ImageFrame'
-import { FancyLink, visuallyHiddenCss, mediaQueries, ieMediaQuery, edgeMediaQuery } from '../components/Foundation'
+import { FancyLink, visuallyHiddenCss, mediaQueries, ieMediaQuery, edgeMediaQuery, Text } from '../components/Foundation'
 import { Logo } from '../components/Logo'
 import styled from '@emotion/styled'
 import ReactPixel from "react-facebook-pixel"
@@ -138,6 +138,16 @@ const FillerDiv = styled.div`
   }
 `
 
+const YellowBox = styled.div`
+  width: 100%;
+  height: auto;
+  border: 5px solid yellow;
+  padding: 1rem;
+  p {
+    padding-bottom: .5rem;
+  }
+`
+
 export class Landing extends React.Component {
   constructor(props) {
     super(props)
@@ -169,6 +179,11 @@ export class Landing extends React.Component {
         <DesktopView>
           <DesktopLeftColumn>
             <Logo />
+            <YellowBox>
+              <Text>After careful consideration, Children's Health℠ has made the difficult decision to cancel all events through the end of May, effective immediately.</Text>
+              <Text>This decision did not come easy, and was based on our assessment of the increasing number of advisories and input from local and state health officials. While this decision is a difficult one, we are making it not only for the health and safety of the children and families we serve, but the entire community. We appreciate your patience and support as we address this emerging public health crisis.</Text>
+              <Text>This includes the Children’s Health Hackathon that was scheduled for March 28-29, 2020 at the Mavs Gaming Hub. As we continue to monitor the status of future events, we will be in contact if this event will be rescheduled later this year.</Text>
+            </YellowBox>
             {date}
             <Links/>
           </DesktopLeftColumn>
