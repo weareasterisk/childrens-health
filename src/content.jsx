@@ -25,38 +25,38 @@ export default {
         receive care.  We want your help building prototypes and creating new ideas that 
         will lead to the next wave of clinical breakthroughs in pediatric care. 
       </>,
-      // <>
-      //   We look forward to welcoming you to the <Link href="https://g.page/mavsgg?share">
-      //   Mavs Gaming Hub in Dallas, TX</Link> on Saturday, 
-      //   March 28 and Sunday, March 29 to help us improve the future of pediatric health care. 
-      //   Meals, snacks, drinks, and an innovative environment will be provided to help you 
-      //   come up with the ideas needed to problem-solve current challenges within the 
-      //   pediatric health care landscape.
-      // </>
+      <>
+        We look forward to welcoming you to the <Link href="https://g.page/mavsgg?share">
+        Mavs Gaming Hub in Dallas, TX</Link> on Saturday, 
+        March 28 and Sunday, March 29 to help us improve the future of pediatric health care. 
+        Meals, snacks, drinks, and an innovative environment will be provided to help you 
+        come up with the ideas needed to problem-solve current challenges within the 
+        pediatric health care landscape.
+      </>
     ]
   },
   faqs: [
-    // {
-    //   question: <>
-    //     Where is the event located?
-    //   </>,
-    //   answer: <>
-    //     The event will be held at the <Link href="https://g.page/mavsgg?share">
-    //       Mavs Gaming Hub in Deep Ellum (2909 Taylor St, Dallas, TX 75226)
-    //     </Link>
-    //   </>
-    // },
-    // {
-    //   question: <>
-    //     How do I get there?
-    //   </>,
-    //   answer: <>
-    //     Please consider the environment (and the lack of parking in Deep Ellum) and
-    //     use the DART to arrive at the event. We suggest parking at the <Link href="https://goo.gl/maps/oaiSbB17865meQqw5">
-    //       Mockingbird station 
-    //     </Link> if you need somewhere closer to park!
-    //   </>
-    // },
+    {
+      question: <>
+        Where is the event located?
+      </>,
+      answer: <>
+        The event will be held at the <Link href="https://g.page/mavsgg?share">
+          Mavs Gaming Hub in Deep Ellum (2909 Taylor St, Dallas, TX 75226)
+        </Link>
+      </>
+    },
+    {
+      question: <>
+        How do I get there?
+      </>,
+      answer: <>
+        Please consider the environment (and the lack of parking in Deep Ellum) and
+        use the DART to arrive at the event. We suggest parking at the <Link href="https://goo.gl/maps/oaiSbB17865meQqw5">
+          Mockingbird station 
+        </Link> if you need somewhere closer to park!
+      </>
+    },
     {
       question: <>
         What can I win?
@@ -98,16 +98,16 @@ export default {
         In addition, we’ll have some fun games and mini-events to keep things interesting while you work.
       </>
     },
-    // {
-    //   question: <>
-    //     When is the event?
-    //   </>,
-    //   answer: <>
-    //     The event will take place on Saturday, March 28 from 10 a.m. - 10 p.m. and Sunday, 
-    //     March 29 from 7 a.m .- 4 p.m.  The venue will be closed overnight, but you can keep 
-    //     hacking elsewhere!
-    //   </>
-    // },
+    {
+      question: <>
+        When is the event?
+      </>,
+      answer: <>
+        The event will take place on Saturday, March 28 from 10 a.m. - 10 p.m. and Sunday, 
+        March 29 from 7 a.m .- 4 p.m.  The venue will be closed overnight, but you can keep 
+        hacking elsewhere!
+      </>
+    },
     {
       question: <>
         What should I bring?
