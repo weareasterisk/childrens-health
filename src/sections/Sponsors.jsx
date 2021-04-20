@@ -1,7 +1,7 @@
 import React from 'react'
 import content from '../content'
 import css from '@emotion/css'
-import { SectionHeading, Image, mediaQueries, ieMediaQuery, edgeMediaQuery } from '../components/Foundation'
+import { SectionHeading, Image, mediaQueries, ieMediaQuery, edgeMediaQuery, Text } from '../components/Foundation'
 import styled from '@emotion/styled'
 
 const SponsorsContainer = styled.div`
@@ -54,6 +54,8 @@ export const Sponsors = () => {
     <SectionHeading>
       Sponsors
     </SectionHeading>
+    <Text style={{ marginBottom: "12px" }}>Sponsoring demonstrates support for pediatric innovation, see real-time capabilities of potential hires, and get your product in hands of future influencers.</Text>
+    <Text>Coming Soon</Text>
     <SponsorsContainer>
       {sponsors}
     </SponsorsContainer>

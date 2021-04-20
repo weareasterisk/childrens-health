@@ -73,23 +73,22 @@ const MobileView = styled.div`
 `
 
 const date = <DateContainer>
-  <div><span css={visuallyHiddenCss}>Date: </span>March 28-29, 2020</div>
-  <div><span css={visuallyHiddenCss}>Location: </span>Mavs Gaming Hub, Texas</div>
+  <div><span css={visuallyHiddenCss}>Date: </span>July 16-18, 2021</div>
 </DateContainer>
 
 const Links = () => {
   return (
     <FancyLinks>
-      <FancyLink href="https://astr.sk/childrens-apply" backgroundColor="#ED2939" id="apply">
+      <FancyLink href="https://architech-inc.typeform.com/to/iy8fcXVM" backgroundColor="#ED2939" id="apply">
         Apply here!
       </FancyLink>
       <FillerDiv />
-      <FancyLink href="https://astr.sk/childrens-volunteer" backgroundColor="#62B4C5" id="volunteer">
+      {/* <FancyLink href="https://astr.sk/childrens-volunteer" backgroundColor="#62B4C5" id="volunteer">
         Volunteering
-      </FancyLink>
-      {/* <FancyLink href="https://astr.sk/childrens-mentor" backgroundColor="#9C8DC3" id="mentor">
-        Mentoring
       </FancyLink> */}
+      <FancyLink href="https://architech-inc.typeform.com/to/Uyu5Ipsu" backgroundColor="#9C8DC3" id="mentor">
+        Mentoring
+      </FancyLink>
     </FancyLinks>
   )
 }
@@ -156,12 +155,12 @@ export class Landing extends React.Component {
 
   componentDidMount() {
     const attend = document.getElementById("apply")
-    const volunteer = document.getElementById("volunteer")
-    // const mentor = document.getElementById("mentor")
+    // const volunteer = document.getElementById("volunteer")
+    const mentor = document.getElementById("mentor")
 
     this.setupPixelEvent(attend, "attend")
-    this.setupPixelEvent(volunteer, "volunteer")
-    // this.setupPixelEvent(mentor, "mentor")
+    // this.setupPixelEvent(volunteer, "volunteer")
+    this.setupPixelEvent(mentor, "mentor")
   }
 
   setupPixelEvent(element, name) {
@@ -179,11 +178,11 @@ export class Landing extends React.Component {
         <DesktopView>
           <DesktopLeftColumn>
             <Logo />
-            <YellowBox>
+            {/* <YellowBox>
               <Text>After careful consideration, Children's Health℠ has made the difficult decision to cancel all events through the end of May, effective immediately.</Text>
               <Text>This decision did not come easy, and was based on our assessment of the increasing number of advisories and input from local and state health officials. While this decision is a difficult one, we are making it not only for the health and safety of the children and families we serve, but the entire community. We appreciate your patience and support as we address this emerging public health crisis.</Text>
               <Text>This includes the Children’s Health Hackathon that was scheduled for March 28-29, 2020 at the Mavs Gaming Hub. As we continue to monitor the status of future events, we will be in contact if this event will be rescheduled later this year.</Text>
-            </YellowBox>
+            </YellowBox> */}
             {date}
             <Links/>
           </DesktopLeftColumn>

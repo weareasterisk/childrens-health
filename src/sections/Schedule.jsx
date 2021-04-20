@@ -87,14 +87,15 @@ export const Schedule = () => {
         Schedule
       </SectionHeading>
       <Schedules>
-        <DaySchedule columnPos="1">
+        <Text>Coming Soon</Text>
+        {/* <DaySchedule columnPos="1">
           <SubHeading>Saturday</SubHeading>
           {saturdaySchedule}
         </DaySchedule>
         <DaySchedule columnPos="2">
           <SubHeading>Sunday</SubHeading>
           {sundaySchedule}
-        </DaySchedule>
+        </DaySchedule> */}
       </Schedules>
     </>
     )

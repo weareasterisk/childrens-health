@@ -7,10 +7,13 @@ export const Logo = () => {
   return (
     <LogoContainer>
       <VisuallHiddenTitle>
-        Children's Health: Innovating Healthcare Hackathon
+        Children's Health: The Virtual Innov8 4 Kids Challenge - A Mixed Reality and Gamification Hackathon 
       </VisuallHiddenTitle>
       <Image src={childrensHealthLogo} alt="Children's Health Logo"/>
-      <Subtitle>Innovating Healthcare Hackathon</Subtitle>
+      <div style={{ marginTop: "36px", gap: "8px", display: "grid" }}>
+        <Subtitle>The Virtual Innov8 4 Kids Challenge</Subtitle>
+        <Subtitle>A Mixed Reality and Gamification Hackathon</Subtitle>
+      </div>
     </LogoContainer>
   )
 }
@@ -24,11 +27,10 @@ const Image = styled.img`
 `
 
 const Subtitle = styled.p`
-  font-size: 24px;
+  font-size: 18px;
   transition: font-size 200ms;
-  margin-top: ${96/2}px;
   ${mediaQueries[2]} {
-    font-size: 36px;
+    font-size: 26px;
   }
 `
 
