@@ -23,7 +23,7 @@ jobs:
     - name: Install dependencies
       run: yarn install --immutable
     - name: Build Project
-      run: yarn build
+      run: yarn build --public-url https://childrens.weareasterisk.com/
       env:
         CI: false
     
