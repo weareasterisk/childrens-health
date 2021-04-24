@@ -7,12 +7,12 @@ export const Logo = () => {
   return (
     <LogoContainer>
       <VisuallHiddenTitle>
-        Children's Health: The Virtual Innov8 4 Kids Challenge - A Mixed Reality and Gamification Hackathon 
+        Children's Health: The Virtual Innov8 4 Kids Challenge - A Mixed Reality and Gamification Challenge 
       </VisuallHiddenTitle>
       <Image src={childrensHealthLogo} alt="Children's Health Logo"/>
       <div style={{ marginTop: "36px", gap: "8px", display: "grid" }}>
         <Subtitle>The Virtual Innov8 4 Kids Challenge</Subtitle>
-        <Subtitle>A Mixed Reality and Gamification Hackathon</Subtitle>
+        <Subtitle>A Mixed Reality and Gamification Challenge</Subtitle>
       </div>
     </LogoContainer>
   )

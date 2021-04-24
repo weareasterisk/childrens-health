@@ -6,7 +6,7 @@ import { css, Global } from '@emotion/core'
 import { Faq } from './sections/Faq'
 import { Landing } from './sections/Landing'
 import { Schedule } from './sections/Schedule'
-import { SmartSection, breakpoints, mediaQueries } from './components/Foundation'
+import { SmartSection, breakpoints, mediaQueries, SectionHeading, Text } from './components/Foundation'
 import { Sponsors } from './sections/Sponsors'
 import React, { useState, useEffect } from 'react'
 import ReactDOM from 'react-dom'
@@ -178,6 +178,18 @@ const Entrypoint = () => {
         </SmartSection>
         <SmartSection backgroundColor="#62B4C5" fontColor="white" id="faq">
           <Faq />
+        </SmartSection>
+        <SmartSection backgroundColor="#ffb819" fontColor="#222">
+          <SectionHeading>About Children's Health</SectionHeading>
+          <Text>
+            <>
+              As the eighth-largest pediatric health care provider in the country, Children’s Health has a 
+              long-standing commitment to the North Texas community that includes not only high-quality patient 
+              care but also advocacy, education and preventative care. As part of our ongoing promise to the 
+              community, Children’s Health has created the Children’s Health Care Delivery Lab to seek newer 
+              and more innovative ways of providing care to our patients.
+            </>
+          </Text>
         </SmartSection>
         <SmartSection backgroundColor="#004A97" fontColor="white" id="schedule">
           <Schedule />

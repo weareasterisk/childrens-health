@@ -1,7 +1,7 @@
 import React from 'react'
 import content from '../content'
 import css from '@emotion/css'
-import { SectionHeading, Image, mediaQueries, ieMediaQuery, edgeMediaQuery, Text } from '../components/Foundation'
+import { SectionHeading, Image, mediaQueries, ieMediaQuery, edgeMediaQuery, Text, FancyLink } from '../components/Foundation'
 import styled from '@emotion/styled'
 
 const SponsorsContainer = styled.div`
@@ -55,7 +55,17 @@ export const Sponsors = () => {
       Sponsors
     </SectionHeading>
     <Text style={{ marginBottom: "12px" }}>Sponsoring demonstrates support for pediatric innovation, see real-time capabilities of potential hires, and get your product in hands of future influencers.</Text>
-    <Text>Coming Soon</Text>
+    <Text><b>Interested in partnering?</b></Text>
+    <Text style={{ marginTop: "16px", fontSize: "22px", fontWeight: "medium" }}>
+      <FancyLink 
+        href="https://viewer.weareasterisk.com/web/viewer.html?file=https://cdn.weareasterisk.net/documents/childrens21/2021_virtual_innov8_kids_challenge_sponsor_outline.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        backgroundColor="#62B4C5"
+      >
+        Sponsor
+      </FancyLink>
+    </Text>
     <SponsorsContainer>
       {sponsors}
     </SponsorsContainer>

@@ -4,9 +4,9 @@
     "display": "browser",
     "scope": "/",
     "start_url": ".",
-    "name": "Children's Health Hackathon | A Mixed Reality and Gamification Hackathon",
+    "name": "Children's Health Hackathon | A Mixed Reality and Gamification Challenge",
     "short_name": "Children's Health Hackathon",
-    "description": "The Children's Health Hackathon is a fun, interactive virtual event where we encourage students and professionals to create technology prototypes that can have an impact on Children's Healthcare.",
+    "description": "The Children's Health Hackathon is a fun, interactive virtual event where we encourage students and professionals to create technology prototypes that can have an impact on Children's Health.",
     "icons": [
         {
             "src": "icon-192x192.png",

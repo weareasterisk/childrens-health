@@ -9,16 +9,9 @@ export default {
     </>,
     body: [
       <>
-        As the eighth-largest pediatric health care provider in the country, Children’s Health has a 
-        long-standing commitment to the North Texas community that includes not only high-quality patient 
-        care but also advocacy, education and preventative care. As part of our ongoing promise to the 
-        community, Children’s Health has created the Children’s Health Care Delivery Lab to seek newer 
-        and more innovative ways of providing care to our patients.
-      </>,
-      <>
         Children’s Health System of Texas is proud to launch our first Innov8 4 Kids Virtual Challenge!  
         This is a fun, interactive virtual event where we encourage students and professionals 
-        to create technology prototypes that can have an impact on Children's Healthcare.
+        to create technology prototypes that can have an impact on Children's Health.
       </>,
       <>
         The challenge will span <b>3 weeks</b>, leading with a series of mini-challenges and culminating with a <b>3 day virtual hackathon</b>.
