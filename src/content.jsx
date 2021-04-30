@@ -91,7 +91,7 @@ export default {
         I still have questions...
       </>,
       answer: <>
-        Shoot us an email at <Link href="mailto:hello@weareasterisk.com?subject=Hello! I have a few questions about the Children's Health Hackathon...">hello@weareasterisk.com</Link> and we'll be happy to help you!
+        Shoot us an email at <Link href="mailto:hello@weareasterisk.com?subject=Hello! I have a few questions about the Children's Health Challenge...">hello@weareasterisk.com</Link> and we'll be happy to help you!
       </>
     },
   ],
