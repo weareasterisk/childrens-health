@@ -54,11 +54,17 @@ export const Sponsors = () => {
     <SectionHeading>
       Sponsors
     </SectionHeading>
-    <Text style={{ marginBottom: "12px" }}>Sponsoring demonstrates support for pediatric innovation, see real-time capabilities of potential hires, and get your product in hands of future influencers.</Text>
+    <Text style={{ marginBottom: "12px" }}>
+      Virtual challenges help bring your brand to future decision-makers. Showcase your
+      company at the Virtual Innov8 4 Kids Challengeand meet student participants and 
+      young professionals passionate about innovative technology. Our attendees represent
+      some of the greatest talent hubs from across the country, and they are excited to
+      learn about your company.
+    </Text>
     <Text><b>Interested in partnering?</b></Text>
     <Text style={{ marginTop: "16px", fontSize: "22px", fontWeight: "medium" }}>
       <FancyLink 
-        href="https://viewer.weareasterisk.com/web/viewer.html?file=https://cdn.weareasterisk.net/documents/childrens21/2021_virtual_innov8_kids_challenge_sponsor_outline.pdf"
+        href="https://viewer.weareasterisk.com/web/viewer.html?file=https://cdn.weareasterisk.net/documents/childrens21/2021-Virtual-Innov8-4-Kids-Challenge_SponsorOutline.pdf"
         target="_blank"
         rel="noopener noreferrer"
         backgroundColor="#62B4C5"

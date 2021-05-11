@@ -56,11 +56,11 @@ const Backframe = styled.div`
   z-index: 1;
 `
 
-export const ImageFrameAlt = ({ imgSrc = imagePlaceholder }) => {
+export const ImageFrameAlt = ({ imgSrc = imagePlaceholder, border = false }) => {
   return (
     <Root>
       <ImageContainer>
-        <ContainedImage src={imgSrc} alt="" />
+        <ContainedImage src={imgSrc} alt="" style={{ border: border ? "2px solid grey" : "" }} />
       </ImageContainer>
       <Backframe />
     </Root>

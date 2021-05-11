@@ -83,11 +83,11 @@ const Links = () => {
         Apply here!
       </FancyLink>
       <FillerDiv />
-      {/* <FancyLink href="https://astr.sk/childrens-volunteer" backgroundColor="#62B4C5" id="volunteer">
-        Volunteering
-      </FancyLink> */}
       <FancyLink href="https://architech-inc.typeform.com/to/Uyu5Ipsu" backgroundColor="#9C8DC3" id="mentor">
         Mentoring
+      </FancyLink>
+      <FancyLink rel="noopener noreferrer" target="_blank" href="https://viewer.weareasterisk.com/web/viewer.html?file=https://cdn.weareasterisk.net/documents/childrens21/2021-Virtual-Innov8-4-Kids-Challenge_SponsorOutline.pdf" backgroundColor="#62B4C5" id="flyer">
+        Sponsor Flyer
       </FancyLink>
     </FancyLinks>
   )
@@ -156,10 +156,12 @@ export class Landing extends React.Component {
   componentDidMount() {
     const attend = document.getElementById("apply")
     // const volunteer = document.getElementById("volunteer")
+    const volunteer = document.getElementById("flyer")
     const mentor = document.getElementById("mentor")
 
     this.setupPixelEvent(attend, "attend")
     // this.setupPixelEvent(volunteer, "volunteer")
+    this.setupPixelEvent(volunteer, "flyer")
     this.setupPixelEvent(mentor, "mentor")
   }
 

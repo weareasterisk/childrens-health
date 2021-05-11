@@ -9,9 +9,11 @@ export default {
     </>,
     body: [
       <>
-        Children’s Health System of Texas is proud to launch our first Innov8 4 Kids Virtual Challenge!  
-        This is a fun, interactive virtual event where we encourage students and professionals 
-        to create technology prototypes that can have an impact on Children's Health.
+        The Virtual Innov8 4 Kids Challenge is an event where teams rapidly create 
+        innovative solutions to common pediatric challenges while competing for prizes.
+        Teams consist of high school / college students and professionals. Children’s Health
+        invites you to join our first virtual challenge, partnering to advocate for innovation
+        at Dallas-Fort Worth.
       </>,
       <>
         The challenge will span <b>3 weeks</b>, leading with a series of mini-challenges and culminating with a <b>3 day virtual challenge</b>.

@@ -183,11 +183,12 @@ const Entrypoint = () => {
           <SectionHeading>About Children's Health</SectionHeading>
           <Text>
             <>
-              As the eighth-largest pediatric health care provider in the country, Children’s Health has a 
-              long-standing commitment to the North Texas community that includes not only high-quality patient 
-              care but also advocacy, education and preventative care. As part of our ongoing promise to the 
-              community, Children’s Health has created the Children’s Health Care Delivery Lab to seek newer 
-              and more innovative ways of providing care to our patients.
+            Children’s Health is one of the largest and most prestigious pediatric health
+            care providers in the country and the leading pediatric health care system
+            in North Texas. Funds from the event will support initiatives and projects
+            at the Children’s Health Care Delivery Innovation Lab, the first pediatric
+            innovation lab in North Texas. The Children’s Health Care Delivery Innovation
+            Lab helps innovators uncover next-generation solutions to pediatric challenges.
             </>
           </Text>
         </SmartSection>

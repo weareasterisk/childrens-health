@@ -2,7 +2,7 @@ import React from 'react'
 import content from '../content'
 import { SectionHeading, mediaQueries, Text, SubHeading, ieMediaQuery, edgeMediaQuery } from '../components/Foundation'
 import { ImageFrameAlt } from '../components/ImageFrameAlt'
-import aboutImage from "../assets/child-2.png"
+import aboutImage from "../assets/AR Cartoon.jpg"
 import styled from '@emotion/styled'
 
 const AboutContentContainer = styled.div`
@@ -57,7 +57,7 @@ export const About = () => {
       About
     </SectionHeading>
     <AboutContentContainer>
-      <ImageFrameAlt imgSrc={aboutImage} />
+      <ImageFrameAlt imgSrc={aboutImage} border />
       <AboutContent>
         <SubHeading>{content.about.heading}</SubHeading>
         <Text>
