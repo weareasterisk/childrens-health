@@ -14,7 +14,7 @@ export default {
         to create technology prototypes that can have an impact on Children's Health.
       </>,
       <>
-        The challenge will span <b>3 weeks</b>, leading with a series of mini-challenges and culminating with a <b>3 day virtual hackathon</b>.
+        The challenge will span <b>3 weeks</b>, leading with a series of mini-challenges and culminating with a <b>3 day virtual challenge</b>.
       </>,
       <>
         It’s an opportunity to showcase your skills, compete for prizes, and build something that can truly make a difference. 
