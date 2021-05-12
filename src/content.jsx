@@ -38,8 +38,9 @@ export default {
         What can I win?
       </>,
       answer: <>
-        Prizes will be awarded for the best projects, as well as for mini challenges. 
-        You’ll be able to see a full list of prizes on our submission platform.
+        Prizes will be awarded for the best projects, as well as for mini challenges.
+        First place wins $1,000, with additional prizes for 2nd, 3rd, and for <u>optional</u> "mini-challenge"
+        events.
       </>
     },
     {
@@ -57,9 +58,9 @@ export default {
       </>,
       answer: <>
         Mentoring and judging are hugely important parts to this event. 
-        We look forward to having you there! Simply fill out the 
-        <Link href="https://architech-inc.typeform.com/to/Uyu5Ipsu">form here</Link> 
-        and we’ll be in touch (link to form).
+        We look forward to having you there! Simply fill out 
+        the <Link href="https://architech-inc.typeform.com/to/Uyu5Ipsu">form here</Link> and
+        we’ll be in touch (link to form).
       </>
     },
     {
