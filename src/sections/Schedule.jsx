@@ -27,6 +27,12 @@ const RightText = styled(Text)`
     -ms-grid-column: 2;
   }
 `
+const fridaySchedule = content.fridaySchedule.map((event, i) => (
+  <ScheduleItem key={`frievent#${i}`}>
+    <LeftText>{event.time}</LeftText>
+    <RightText>{event.details}</RightText>
+  </ScheduleItem>
+))
 
 const saturdaySchedule = content.saturdaySchedule.map((event, i) => (
   <ScheduleItem key={`satevent#${i}`}>
@@ -85,17 +91,21 @@ export const Schedule = () => {
     <>
       <SectionHeading>
         Schedule
+        <SubHeading>The following times are in Central Daylight Time</SubHeading>
       </SectionHeading>
       <Schedules>
-        <Text>Coming Soon</Text>
-        {/* <DaySchedule columnPos="1">
+        <DaySchedule columnPos="1">
+          <SubHeading>Friday</SubHeading>
+          {fridaySchedule}
+        </DaySchedule>
+        <DaySchedule columnPos="2">
           <SubHeading>Saturday</SubHeading>
           {saturdaySchedule}
         </DaySchedule>
-        <DaySchedule columnPos="2">
+        <DaySchedule columnPos="3">
           <SubHeading>Sunday</SubHeading>
           {sundaySchedule}
-        </DaySchedule> */}
+        </DaySchedule>
       </Schedules>
     </>
     )

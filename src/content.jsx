@@ -98,113 +98,93 @@ export default {
       </>
     },
   ],
-  saturdaySchedule: [
+  fridaySchedule: [
     {
-      time: "8:45 - 10:15 AM",
-      details: "Breakfast"
+      time: "6:00 - 7:00 PM",
+      details: "Pre Event Networking Session"
     },
     {
-      time: "9:00 - 10:15 AM",
-      details: "Registration"
-    },
-    {
-      time: "10:00 - 10:30 AM",
+      time: "7:00 - 7:30 PM",
       details: "Opening Ceremony"
     },
     {
-      time: "10:45 - 11:45 AM",
-      details: "Challenge Overview Session"
+      time: "9:00 - 10:00 PM",
+      details: "Team Formation & Ideation"
+    },
+  ],
+  saturdaySchedule: [
+    {
+      time: "Rise and Shine: Coffee / Breakfast",
+      details: "8:00 - 9:00 AM"
     },
     {
-      time: "12:00 PM",
-      details: "Hacking Begins"
+      time: "Mentorship Office Hours",
+      details: "10:00 - 11:00 AM"
     },
     {
-      time: "12:30 - 1:30 PM",
-      details: "Lunch"
+      time: "Workshop",
+      details: "1:00 - 2:00 PM"
     },
     {
-      time: "12:45 - 1:15 PM",
-      details: "Team Building Session"
+      time: "Workshop",
+      details: "2:00 - 3:00 PM"
     },
     {
-      time: "1:15 - 1:45 PM",
-      details: "Ideation Session"
+      time: "Fun Activity",
+      details: "8:00 - 9:00 PM"
     },
     {
-      time: "3:00 - 3:30 PM",
-      details: "Workshop"
+      time: "Hot Bytes",
+      details: "9:00 - 10:00 PM"
     },
     {
-      time: "4:00 - 4:30 PM",
-      details: "Workshop"
+      time: "Mentorship Office Hours",
+      details: "10:00 - 11:00 PM"
     },
     {
-      time: "5:00 - 6:00 PM",
-      details: "Activity: Free Throw Competition"
+      time: "Game Time (Jackbox / Among Us)",
+      details: "11:00 PM - 12:00 AM"
     },
-    {
-      time: "6:00 - 7:30 PM",
-      details: "Dinner"
-    },
-    {
-      time: "8:00 - 9:00 PM",
-      details: "Activity: Trivia/Kahoot"
-    }
+    
   ],
   sundaySchedule: [
     {
-      time: "8:00 AM",
-      details: "Venue Re-Opens"
+      time: "8:00 - 8:30 AM",
+      details: "Rise & Shine"
     },
     {
-      time: "8:00 - 9:30 AM",
-      details: "Light Refreshments"
+      time: "8:30 - 9:00 AM",
+      details: "Workshop - How to Submit"
     },
     {
-      time: "9:30 - 10:00 AM",
-      details: "Pitch Workshop"
+      time: "9:00 - 10:00 AM",
+      details: "Mentorship Office Hours"
     },
     {
-      time: "11:00 AM",
-      details: "Submissions Due"
+      time: "10:00 AM",
+      details: "⚠️🚨~Submission Deadline~🚨⚠️"
     },
     {
-      time: "11:15 - 11:45 AM",
-      details: "Judges Briefing"
+      time: "10:30 AM - 12:30 PM",
+      details: "Judging"
     },
     {
-      time: "12:00 PM",
-      details: "Hacking Ends"
+      time: "12:30 - 1:00 PM",
+      details: "Failure Party"
     },
     {
-      time: "11:30 AM - 1:00 PM",
-      details: "Brunch"
+      time: "1:00 - 2:00 PM",
+      details: "Final Presentations"
     },
     {
-      time: "12:30 - 1:30 PM",
-      details: "Expo (1h for judging)"
+      time: "2:00 - 2:30 PM",
+      details: "Mini-Event Prize Ceremony"
     },
     {
-      time: "1:15 - 1:45 PM",
-      details: "Final Judges Briefing"
-    },
-    {
-      time: "1:45 - 2:15 PM",
-      details: "Final Pitch Briefing"
-    },
-    {
-      time: "2:30 - 3:30 PM",
-      details: "Final Pitches"
-    },
-    {
-      time: "3:15 - 3:30 PM",
+      time: "2:30 - 3:00 PM",
       details: "Closing Ceremony"
     },
-    {
-      time: "3:30 - 3:45 PM",
-      details: "Awards"
-    }
+    
   ],
   sponsors: [
     // {
