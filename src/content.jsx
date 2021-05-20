@@ -16,7 +16,7 @@ export default {
         at Dallas-Fort Worth.
       </>,
       <>
-        The challenge is from <b><Link href="#schedule">July 16<sup>th</sup> – 18<sup>th</sup></Link></b>, with optional mini-challenges starting on <b><Link href="#schedule">June 28<sup>th</sup></Link></b>, leading up to the main event..
+        The challenge is from <b><Link href="#schedule">July 16<sup>th</sup> – 18<sup>th</sup></Link></b>, with optional mini-challenges starting on <b><Link href="#schedule">June 28<sup>th</sup></Link></b>, leading up to the main event.
       </>,
       <>
         It’s an opportunity to showcase your skills, compete for prizes, and build something that can truly make a difference. 
