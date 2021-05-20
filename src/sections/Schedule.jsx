@@ -86,6 +86,14 @@ const Schedules = styled.div`
   }
 `
 
+const ExtraScheduleDetails = styled.p`
+  margin-bottom: 52px;
+
+  ${mediaQueries[2]} {
+    max-width: 50%;
+  }
+`
+
 export const Schedule = () => {
   return (
     <>
@@ -93,17 +101,20 @@ export const Schedule = () => {
         Schedule
         <SubHeading>The following times are in Central Daylight Time</SubHeading>
       </SectionHeading>
+      <ExtraScheduleDetails>
+        {content.extraScheduleDetails}
+      </ExtraScheduleDetails>
       <Schedules>
         <DaySchedule columnPos="1">
-          <SubHeading>Friday</SubHeading>
+          <SubHeading>Friday, July 16<sup>th</sup></SubHeading>
           {fridaySchedule}
         </DaySchedule>
         <DaySchedule columnPos="2">
-          <SubHeading>Saturday</SubHeading>
+          <SubHeading>Saturday, July 17<sup>th</sup></SubHeading>
           {saturdaySchedule}
         </DaySchedule>
         <DaySchedule columnPos="3">
-          <SubHeading>Sunday</SubHeading>
+          <SubHeading>Sunday, July 18<sup>th</sup></SubHeading>
           {sundaySchedule}
         </DaySchedule>
       </Schedules>

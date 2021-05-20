@@ -2,7 +2,7 @@ import React from 'react'
 import content from '../content'
 import { SectionHeading, mediaQueries, Text, SubHeading, ieMediaQuery, edgeMediaQuery } from '../components/Foundation'
 import { ImageFrameAlt } from '../components/ImageFrameAlt'
-import aboutImage from "../assets/AR Cartoon.jpg"
+import aboutImage from "../assets/vr-helmet-pill.jpg"
 import styled from '@emotion/styled'
 
 const AboutContentContainer = styled.div`

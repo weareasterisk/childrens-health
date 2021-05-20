@@ -16,7 +16,7 @@ export default {
         at Dallas-Fort Worth.
       </>,
       <>
-        The challenge will span <b>3 weeks</b>, leading with a series of mini-challenges and culminating with a <b>3 day virtual challenge</b>.
+        The challenge is from <b><Link href="#schedule">July 16<sup>th</sup> – 18<sup>th</sup></Link></b>, with optional mini-challenges starting on <b><Link href="#schedule">June 28<sup>th</sup></Link></b>, leading up to the main event..
       </>,
       <>
         It’s an opportunity to showcase your skills, compete for prizes, and build something that can truly make a difference. 
@@ -40,7 +40,7 @@ export default {
       answer: <>
         Prizes will be awarded for the best projects, as well as for mini challenges.
         First place wins $1,000, with additional prizes for 2nd, 3rd, and for <u>optional</u> "mini-challenge"
-        events.
+        events. Prizes will also be offered for the best high school team and the best college team.
       </>
     },
     {
@@ -48,7 +48,7 @@ export default {
         Who can participate?
       </>,
       answer: <>
-        The event is open to anyone 13 or older living in the United States and 
+        The event is open to anyone in 9th grade or above (high school or college) living in the United States and 
         not employed or otherwise affiliated with Children’s Health. 
       </>
     },
@@ -186,6 +186,17 @@ export default {
     },
     
   ],
+  extraScheduleDetails: 
+    <>
+      <i><b>Mini-Challenge Events: June 28<sup>th</sup> &mdash; July 15<sup>th</sup></b></i><br />
+      <u>Optional Challenges</u> leading up to the main event <br />
+      Avg 8 hours each*<br/>
+      <br />
+      <i><b>Main Event: July 16<sup>th</sup> &mdash; July 18<sup>th</sup></b></i><br />
+      Minimum 16 hour time commitment*<br />
+      <br />
+      *There is <u>no limit</u> on how much time teams can spend on the submission.  Some teams choose to work late nights to polish and refine the submission.  We can provide documentation recognizing all hours spent on your idea, to count towards student volunteer requirements.
+    </>,
   sponsors: [
     // {
     //   imageSrc: images['childrens-health-logo'],

@@ -4,7 +4,7 @@ import { FancyLink, visuallyHiddenCss, mediaQueries, ieMediaQuery, edgeMediaQuer
 import { Logo } from '../components/Logo'
 import styled from '@emotion/styled'
 import ReactPixel from "react-facebook-pixel"
-import landingPhoto from "../assets/pexels-max-fischer-children-gaming.jpg"
+import landingPhoto from "../assets/AR Cartoon Cropped.png"
 
 const LandingImageContainer = styled.div`
   -ms-grid-column: 2;
