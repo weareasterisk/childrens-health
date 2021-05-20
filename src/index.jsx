@@ -6,7 +6,7 @@ import { css, Global } from '@emotion/core'
 import { Faq } from './sections/Faq'
 import { Landing } from './sections/Landing'
 import { Schedule } from './sections/Schedule'
-import { SmartSection, breakpoints, mediaQueries, SectionHeading, Text } from './components/Foundation'
+import { FancyLink, SmartSection, breakpoints, mediaQueries, SectionHeading, Text } from './components/Foundation'
 import { Sponsors } from './sections/Sponsors'
 import React, { useState, useEffect } from 'react'
 import ReactDOM from 'react-dom'
@@ -197,6 +197,17 @@ const Entrypoint = () => {
         </SmartSection>
         <SmartSection id="sponsors">
           <Sponsors />
+        </SmartSection>
+        <SmartSection id="idea">
+          <SectionHeading>Submit Your Innovative Idea!!</SectionHeading>
+          <Text style={{maxWidth: '700px'}}>
+            <>
+            Have an idea for using mixed reality or gamification in pediatric healthcare?  Submit your idea here!<br /><br />
+            Ideas will be shared with the teams needing an idea during the innovation challenge.  After the event, Children’s Health may choose 1-2 team submissions to further develop and test with patients and staff.<br /><br />
+            Example idea:  Mobile app game that lets new housekeepers use their camera phone to find critical areas to clean in a patient’s room.  Could be time-based with a leaderboard!<br /><br />
+            <FancyLink href="https://architech-inc.typeform.com/to/uYRkylb0" backgroundColor="#ED2939">Submit Your Idea!</FancyLink>
+            </>
+          </Text>
         </SmartSection>
         <SmartSection>
           <BetweenSponsorsAndContact />

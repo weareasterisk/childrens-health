@@ -4,7 +4,7 @@ import { Circle, Triangle } from '../components/Shapes'
 import styled from '@emotion/styled'
 import { mediaQueries } from '../components/Foundation'
 import balloonImg from '../assets/balloon.png'
-import images from "../assets/*.png"
+import images from "../assets/*.jpg"
 import { PhotoGallery } from '../components/PhotoGallary'
 
 const Container = styled.div`
@@ -44,10 +44,10 @@ const PhotoGallaryContainer = styled.div`
 `
 
 const imgSrcs = [
-  images['child-with-dog'],
-  images['research-1'],
-  images['child-with-nurses'],
-  images['research-2'],
+  images['couch-mobile-phone'],
+  images['child-cardboard-vr'],
+  images['blue-shirt-vr-headset'],
+  images['anatomy-ipad-app'],
 ]
 
 export const BetweenLandingAndAbout = () => {
