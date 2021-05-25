@@ -9,7 +9,7 @@ const Root = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
-  max-width: 630px;
+  max-width: 470px;
   margin: 0 auto;
   ${ieMediaQuery} {
     height: 300px;

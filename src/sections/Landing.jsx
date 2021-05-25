@@ -89,6 +89,7 @@ const Links = () => {
       <FancyLink rel="noopener noreferrer" target="_blank" href="https://viewer.weareasterisk.com/web/viewer.html?file=https://cdn.weareasterisk.net/documents/childrens21/2021-Innov8-4-Kids-Call-for-Participants.pdf" backgroundColor="#62B4C5" id="flyer">
         Flyer
       </FancyLink>
+      <FancyLink rel="noopener noreferrer" target="_blank" href="https://architech-inc.typeform.com/to/uYRkylb0" backgroundColor="#ffb819">Submit Your Idea!</FancyLink>
     </FancyLinks>
   )
 }
