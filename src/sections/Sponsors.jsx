@@ -3,6 +3,7 @@ import content from '../content'
 import css from '@emotion/css'
 import { SectionHeading, Image, mediaQueries, ieMediaQuery, edgeMediaQuery, Text, FancyLink } from '../components/Foundation'
 import styled from '@emotion/styled'
+import gpardLogo from "../assets/GPARD_Logo_PROCESS (1).jpg"
 
 const SponsorsContainer = styled.div`
   display: grid;

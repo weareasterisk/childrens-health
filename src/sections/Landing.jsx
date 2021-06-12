@@ -5,6 +5,7 @@ import { Logo } from '../components/Logo'
 import styled from '@emotion/styled'
 import ReactPixel from "react-facebook-pixel"
 import landingPhoto from "../assets/AR Cartoon Cropped.png"
+import microsoftImage from "../assets/Microsoft-logo_rgb_c-gray (1).png"
 
 const LandingImageContainer = styled.div`
   -ms-grid-column: 2;
@@ -78,19 +79,25 @@ const date = <DateContainer>
 
 const Links = () => {
   return (
-    <FancyLinks>
-      <FancyLink href="https://architech-inc.typeform.com/to/iy8fcXVM" backgroundColor="#ED2939" id="apply">
-        Apply here!
-      </FancyLink>
-      <FillerDiv />
-      <FancyLink href="https://architech-inc.typeform.com/to/Uyu5Ipsu" backgroundColor="#9C8DC3" id="mentor">
-        Mentoring
-      </FancyLink>
-      <FancyLink rel="noopener noreferrer" target="_blank" href="https://viewer.weareasterisk.com/web/viewer.html?file=https://cdn.weareasterisk.net/documents/childrens21/2021-Innov8-4-Kids-Call-for-Participants.pdf" backgroundColor="#62B4C5" id="flyer">
-        Flyer
-      </FancyLink>
-      <FancyLink rel="noopener noreferrer" target="_blank" href="https://architech-inc.typeform.com/to/uYRkylb0" backgroundColor="#ffb819">Submit Your Idea!</FancyLink>
-    </FancyLinks>
+    <div>
+      <FancyLinks>
+        <FancyLink href="https://architech-inc.typeform.com/to/iy8fcXVM" backgroundColor="#ED2939" id="apply">
+          Apply here!
+        </FancyLink>
+        <FillerDiv />
+        <FancyLink href="https://architech-inc.typeform.com/to/Uyu5Ipsu" backgroundColor="#9C8DC3" id="mentor">
+          Mentoring
+        </FancyLink>
+        <FancyLink rel="noopener noreferrer" target="_blank" href="https://viewer.weareasterisk.com/web/viewer.html?file=https://cdn.weareasterisk.net/documents/childrens21/2021-Innov8-4-Kids-Call-for-Participants.pdf" backgroundColor="#62B4C5" id="flyer">
+          Flyer
+        </FancyLink>
+        <FancyLink rel="noopener noreferrer" target="_blank" href="https://architech-inc.typeform.com/to/uYRkylb0" backgroundColor="#ffb819">Submit Your Idea!</FancyLink>
+      </FancyLinks>
+      <img src={microsoftImage} alt="Microsoft Logo" style={{
+                maxWidth: "250px",
+                paddingTop: "16px"
+              }} />
+    </div>
   )
 }
 

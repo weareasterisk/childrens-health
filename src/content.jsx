@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from './components/Foundation'
 import images from "./assets/*.png"
+import jpg from "./assets/*.jpg"
 
 export default {
   about: {
@@ -198,37 +199,9 @@ export default {
       *There is <u>no limit</u> on how much time teams can spend on the submission.  Some teams choose to work late nights to polish and refine the submission.  We can provide documentation recognizing all hours spent on your idea, to count towards student volunteer requirements.
     </>,
   sponsors: [
-    // {
-    //   imageSrc: images['childrens-health-logo'],
-    //   sponsorName: "Children's Health"
-    // },
-    // {
-    //   imageSrc: images['childrens-health-logo'],
-    //   sponsorName: "Children's Health"
-    // },
-    // {
-    //   imageSrc: images['childrens-health-logo'],
-    //   sponsorName: "Children's Health"
-    // },
-    // {
-    //   imageSrc: images['childrens-health-logo'],
-    //   sponsorName: "Children's Health"
-    // },
-    // {
-    //   imageSrc: images['childrens-health-logo'],
-    //   sponsorName: "Children's Health"
-    // },
-    // {
-    //   imageSrc: images['childrens-health-logo'],
-    //   sponsorName: "Children's Health"
-    // },
-    // {
-    //   imageSrc: images['childrens-health-logo'],
-    //   sponsorName: "Children's Health"
-    // },
-    // {
-    //   imageSrc: images['childrens-health-logo'],
-    //   sponsorName: "Children's Health"
-    // },
+    {
+      imageSrc: jpg['GPARD_Logo_PROCESS (1)'],
+      sponsorName: "Grapevine Parks & Rec"
+    },
   ]
 }
