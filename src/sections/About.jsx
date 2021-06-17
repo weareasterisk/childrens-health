@@ -65,6 +65,13 @@ export const About = () => {
         </Text>
         {aboutContent}
       </AboutContent>
+      <SubHeading>Mini Challenges</SubHeading>
+      <Text>
+        <b>No Code Challenge:</b> Challenge participants to find software to create games, AR, or VR that doesn't require programming skills. Individuals would record a short video showing how to use the platform (validates it doesn't require programming) and explain how the software could be used to create something that helps patients or staff. This list will be added to our portal for the final weekend event.
+        <br/>
+        <br/>
+        <b>Gamifying the Outdoors Challenge:</b> Individuals pitch ideas (don't have to create) on how to get kids outside by gamifying local parks and public areas.
+      </Text>
     </AboutContentContainer>
   </>
 }
