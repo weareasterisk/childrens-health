@@ -6,6 +6,8 @@ import styled from '@emotion/styled'
 import ReactPixel from "react-facebook-pixel"
 import landingPhoto from "../assets/AR Cartoon Cropped.png"
 import microsoftImage from "../assets/Microsoft-logo_rgb_c-gray (1).png"
+import images from "../assets/*.png"
+import jpg from "../assets/*.jpg"
 
 const LandingImageContainer = styled.div`
   -ms-grid-column: 2;
@@ -93,10 +95,36 @@ const Links = () => {
         </FancyLink>
         <FancyLink rel="noopener noreferrer" target="_blank" href="https://architech-inc.typeform.com/to/uYRkylb0" backgroundColor="#ffb819">Submit Your Idea!</FancyLink>
       </FancyLinks>
-      <img src={microsoftImage} alt="Microsoft Logo" style={{
-                maxWidth: "250px",
-                paddingTop: "16px"
-              }} />
+    </div>
+  )
+}
+
+const GoldSponsors = () => {
+  return (
+    <div style={{
+      display: "flex",
+      alignContent: "center",
+      flexWrap: "wrap",
+      gap: "16px",
+    }}>
+      <div>
+        <img src={microsoftImage} alt="Microsoft Logo" style={{
+          maxWidth: "250px",
+          paddingTop: "16px"
+        }} />
+      </div>
+      <div>
+        <img src={images["image001"]} alt="Persistent" style={{
+          maxWidth: "250px",
+          paddingTop: "16px"
+        }} />
+      </div>
+      <div>
+        <img src={jpg['GPARD_Logo_PROCESS (1)']} alt="Grapevine Parks & Rec" style={{
+          maxWidth: "150px",
+          paddingTop: "16px"
+        }} />
+      </div>
     </div>
   )
 }
@@ -195,6 +223,8 @@ export class Landing extends React.Component {
             </YellowBox> */}
             {date}
             <Links/>
+            <h3> Gold Sponsors </h3>
+            <GoldSponsors />
           </DesktopLeftColumn>
           <LandingImageContainer>
             <ImageFrame imgSrc={landingPhoto}/>
@@ -204,6 +234,8 @@ export class Landing extends React.Component {
           <Logo />
           {date}
           <Links/>
+          <h3> Gold Sponsors </h3>
+          <GoldSponsors />
           <ImageFrame imgSrc={landingPhoto}/>
         </MobileView>
       </>

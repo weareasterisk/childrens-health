@@ -200,8 +200,16 @@ export default {
     </>,
   sponsors: [
     {
-      imageSrc: jpg['GPARD_Logo_PROCESS (1)'],
-      sponsorName: "Grapevine Parks & Rec"
+      imageSrc: images["Microsoft-logo_rgb_c-gray (1)"],
+      sponsorName: "Microsoft",
     },
+    {
+      imageSrc: jpg['GPARD_Logo_PROCESS (1)'],
+      sponsorName: "Grapevine Parks & Rec",
+    },
+    {
+      imageSrc: images["image001"],
+      sponsorName: "Persistent"
+    }
   ]
 }
