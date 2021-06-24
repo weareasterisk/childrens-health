@@ -67,10 +67,33 @@ export const About = () => {
       </AboutContent>
       <SubHeading>Mini Challenges</SubHeading>
       <Text>
-        <b>No Code Challenge:</b> Challenge participants to find software to create games, AR, or VR that doesn't require programming skills. Individuals would record a short video showing how to use the platform (validates it doesn't require programming) and explain how the software could be used to create something that helps patients or staff. This list will be added to our portal for the final weekend event.
+        <b>No Code Challenge:</b>
+        <ul style={{
+          paddingLeft: "24px"
+        }}>
+          <li>
+          Identify an existing application that would allow for people with zero-to-limited coding ability to create a game, AR, or VR experience. 
+          </li>
+          <li>
+          Demonstrate how to use the application in a short video and show how it does not require programming experience. In this video, explain an example of how the application could be used to create something that helps patients or staff.
+          </li>
+          <li>
+            The application will be added to our portal for the final event weekend.
+          </li>
+        </ul>
         <br/>
         <br/>
-        <b>Gamifying the Outdoors Challenge:</b> Individuals pitch ideas (don't have to create) on how to get kids outside by gamifying local parks and public areas.
+        <b>Gamifying the Outdoors Challenge:</b>
+        <ul style={{
+          paddingLeft: "24px"
+        }}>
+          <li>
+            How might we leverage gamification to get kids outside in local parks and public areas?
+          </li>
+          <li>
+            Pitch an idea that satisfies the challenge in a short video. You don’t have to actually create this idea, a pitch is all that is required.
+          </li>
+        </ul>
       </Text>
     </AboutContentContainer>
   </>
