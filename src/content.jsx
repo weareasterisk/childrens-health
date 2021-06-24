@@ -61,7 +61,7 @@ export default {
         Mentoring and judging are hugely important parts to this event. 
         We look forward to having you there! Simply fill out 
         the <Link href="https://architech-inc.typeform.com/to/Uyu5Ipsu">form here</Link> and
-        we’ll be in touch (link to form).
+        we’ll be in touch.
       </>
     },
     {
