@@ -94,6 +94,11 @@ export const About = () => {
             Pitch an idea that satisfies the challenge in a short video. You don’t have to actually create this idea, a pitch is all that is required.
           </li>
         </ul>
+        <br/>
+        <Text>
+          Your submission must be in the form of a video uploaded to YouTube or Vimeo, with a max length of 3 minutes.
+          We suggest keeping the length around 1-2 minutes max!
+        </Text>
       </Text>
     </AboutContentContainer>
   </>
