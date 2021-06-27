@@ -80,6 +80,9 @@ export const About = () => {
           <li>
             The application will be added to our portal for the final event weekend.
           </li>
+          <li>
+            <a href="https://cdn.weareasterisk.net/documents/childrens21/Hackathon%20Ideas%20-%20Children's%20Health%20Dallas-min.pdf" target="_blank" rel="noopener noreferrer">Click here for inspiration</a>
+          </li>
         </ul>
         <br/>
         <br/>
