@@ -82,6 +82,8 @@ export const About = () => {
           </li>
           <li>
             <a href="https://cdn.weareasterisk.net/documents/childrens21/Hackathon%20Ideas%20-%20Children's%20Health%20Dallas-min.pdf" target="_blank" rel="noopener noreferrer">Click here for inspiration</a>
+          </li>
+          <li>
             <a href="https://assets.childrens.com/share/219CC8FE-C2FE-4ADB-9FF6DE4558B6A5C2" target="_blank" rel="noopener noreferrer">Patient-facing inspiration</a>
           </li>
         </ul>
