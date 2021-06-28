@@ -94,6 +94,7 @@ const Links = () => {
           Flyer
         </FancyLink>
         <FancyLink rel="noopener noreferrer" target="_blank" href="https://architech-inc.typeform.com/to/uYRkylb0" backgroundColor="#ffb819">Submit Your Idea!</FancyLink>
+        <FancyLink rel="noopener noreferrer" target="_blank" href="https://architech-inc.typeform.com/to/pbKXtRgy" backgroundColor="#004a97">Submit to a Mini Challenge!</FancyLink>
       </FancyLinks>
     </div>
   )
