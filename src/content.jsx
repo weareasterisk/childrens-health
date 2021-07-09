@@ -109,46 +109,78 @@ export default {
       details: "Opening Ceremony"
     },
     {
+      time: "8:00 - 9:00 PM",
+      details: "Workshop - Howie Gurr (VR)"
+    },
+    {
       time: "9:00 - 10:00 PM",
       details: "Team Formation & Ideation"
     },
+    {
+      time: "10:00 - 11:00 PM",
+      details: "Workshop - Human Centered Design"
+    }
   ],
   saturdaySchedule: [
     {
-      time: "Rise and Shine: Coffee / Breakfast",
-      details: "8:00 - 9:00 AM"
+      details: "Rise and Shine: Coffee / Breakfast",
+      time: "8:00 - 9:00 AM"
     },
     {
-      time: "Mentorship Office Hours",
-      details: "10:00 - 11:00 AM"
+      details: "Workshop - Pamela Guillory",
+      time: "9:00 - 10:00 AM",
     },
     {
-      time: "Workshop",
-      details: "1:00 - 2:00 PM"
+      details: "Mentorship Office Hours",
+      time: "10:00 - 11:00 AM"
     },
     {
-      time: "Workshop",
-      details: "2:00 - 3:00 PM"
+      time: "12:00 - 1:00 PM",
+      details: "Workshop - Unity XR",
     },
     {
-      time: "Fun Activity",
-      details: "8:00 - 9:00 PM"
+      details: "Workshop",
+      time: "1:00 - 2:00 PM"
     },
     {
-      time: "Hot Bytes",
-      details: "9:00 - 10:00 PM"
+      details: "Workshop - BMT HCD/Gamification",
+      time: "2:00 - 3:00 PM"
     },
     {
-      time: "Mentorship Office Hours",
-      details: "10:00 - 11:00 PM"
+      time: "3:00 - 4:00 PM",
+      details: "Workshop - Mixed Reality",
     },
     {
-      time: "Game Time (Jackbox / Among Us)",
-      details: "11:00 PM - 12:00 AM"
+      time: "4:00 - 5:00 PM",
+      details: "Mentorship Office Hours",
+    },
+    {
+      time: "6:00 - 8:00 PM",
+      details: "Asterisk Mukbang",
+    },
+    {
+      details: "Fun Activity",
+      time: "8:00 - 9:00 PM"
+    },
+    {
+      details: "Hot Bytes",
+      time: "9:00 - 10:00 PM"
+    },
+    {
+      details: "Mentorship Office Hours",
+      time: "10:00 - 11:00 PM"
+    },
+    {
+      details: "Game Time (Jackbox / Among Us)",
+      time: "11:00 PM - 12:00 AM"
     },
     
   ],
   sundaySchedule: [
+    {
+      time: "12:00 - 1:00 AM",
+      details: "Bob Ross MS Paint Party",
+    },
     {
       time: "8:00 - 8:30 AM",
       details: "Rise & Shine"
