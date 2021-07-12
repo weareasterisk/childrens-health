@@ -65,8 +65,10 @@ export const About = () => {
         </Text>
         {aboutContent}
       </AboutContent>
-      <SubHeading>Mini Challenges</SubHeading>
+      <SubHeading />
       <Text>
+        <SubHeading>Mini Challenges</SubHeading>
+        <br/>
         <b>No Code Challenge:</b>
         <ul style={{
           paddingLeft: "24px"
@@ -102,8 +104,15 @@ export const About = () => {
         </ul>
         <br/>
         <Text>
-          Your submission must be in the form of a video uploaded to YouTube or Vimeo, with a max length of 3 minutes.
-          We suggest keeping the length around 1-2 minutes max!
+          Your video should be hosted on Youtube, Vimeo, or an equivalent video hosting platform (not Facebook or Instagram). You can also submit a Google Slides link, if you'd prefer to do that.
+        </Text>
+        <br/>
+        <Text>
+          Your video shouldn't be longer than 5 minutes. Also, we suggest keeping your video around 2-3 minutes.
+        </Text>
+        <br/>
+        <Text>
+          If you're submitting a presentation, we suggest keeping it around 5-10 slides. You can add narration if you want.
         </Text>
       </Text>
     </AboutContentContainer>
