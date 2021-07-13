@@ -242,6 +242,14 @@ export default {
     {
       imageSrc: images["image001"],
       sponsorName: "Persistent"
+    },
+    {
+      imageSrc: images["salesforce-logo (1)"],
+      sponsorName: "Salesforce"
+    },
+    {
+      imageSrc: images["5daf0f8f2b639693bfe5d974_Allata_Color (1)"],
+      sponsorName: "Allata"
     }
   ]
 }
