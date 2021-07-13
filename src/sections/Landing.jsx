@@ -126,6 +126,12 @@ const GoldSponsors = () => {
           paddingTop: "16px"
         }} />
       </div>
+      <div>
+        <img src={images["5daf0f8f2b639693bfe5d974_Allata_Color (1)"]} alt="Allata" style={{
+          maxWidth: "250px",
+          paddingTop: "16px"
+        }} />
+      </div>
     </div>
   )
 }
