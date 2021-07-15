@@ -101,10 +101,6 @@ export default {
   ],
   fridaySchedule: [
     {
-      time: "6:00 - 7:00 PM",
-      details: "Pre Event Networking Session"
-    },
-    {
       time: "7:00 - 7:30 PM",
       details: "Opening Ceremony"
     },
