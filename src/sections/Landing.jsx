@@ -83,12 +83,15 @@ const Links = () => {
   return (
     <div>
       <FancyLinks>
-        <FancyLink href="https://architech-inc.typeform.com/to/iy8fcXVM" backgroundColor="#ED2939" id="apply">
+        {/* <FancyLink href="https://architech-inc.typeform.com/to/iy8fcXVM" backgroundColor="#ED2939" id="apply">
           Apply here!
         </FancyLink>
         <FillerDiv />
         <FancyLink href="https://architech-inc.typeform.com/to/Uyu5Ipsu" backgroundColor="#9C8DC3" id="mentor">
           Mentoring
+        </FancyLink> */}
+        <FancyLink href="https://asterisk.events/site/childrens21" target="_blank" rel="noopener noreferrer" backgroundColor="#ED2939">
+          Live Site
         </FancyLink>
         <FancyLink rel="noopener noreferrer" target="_blank" href="https://viewer.weareasterisk.com/web/viewer.html?file=https://cdn.weareasterisk.net/documents/childrens21/2021-Innov8-4-Kids-Call-for-Participants.pdf" backgroundColor="#62B4C5" id="flyer">
           Flyer
@@ -197,15 +200,15 @@ export class Landing extends React.Component {
   }
 
   componentDidMount() {
-    const attend = document.getElementById("apply")
+    // const attend = document.getElementById("apply")
     // const volunteer = document.getElementById("volunteer")
     const volunteer = document.getElementById("flyer")
-    const mentor = document.getElementById("mentor")
+    // const mentor = document.getElementById("mentor")
 
-    this.setupPixelEvent(attend, "attend")
+    // this.setupPixelEvent(attend, "attend")
     // this.setupPixelEvent(volunteer, "volunteer")
     this.setupPixelEvent(volunteer, "flyer")
-    this.setupPixelEvent(mentor, "mentor")
+    // this.setupPixelEvent(mentor, "mentor")
   }
 
   setupPixelEvent(element, name) {
