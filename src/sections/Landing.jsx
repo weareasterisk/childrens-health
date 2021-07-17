@@ -93,11 +93,11 @@ const Links = () => {
         <FancyLink href="https://asterisk.events/site/childrens21" target="_blank" rel="noopener noreferrer" backgroundColor="#ED2939">
           Live Site
         </FancyLink>
-        <FancyLink rel="noopener noreferrer" target="_blank" href="https://viewer.weareasterisk.com/web/viewer.html?file=https://cdn.weareasterisk.net/documents/childrens21/2021-Innov8-4-Kids-Call-for-Participants.pdf" backgroundColor="#62B4C5" id="flyer">
-          Flyer
+        <FancyLink rel="noopener noreferrer" target="_blank" href="https://childrens21.devpost.com" backgroundColor="#62B4C5">
+          Devpost
         </FancyLink>
-        <FancyLink rel="noopener noreferrer" target="_blank" href="https://architech-inc.typeform.com/to/uYRkylb0" backgroundColor="#ffb819">Submit Your Idea!</FancyLink>
-        <FancyLink rel="noopener noreferrer" target="_blank" href="https://architech-inc.typeform.com/to/pbKXtRgy" backgroundColor="#004a97">Submit to a Mini Challenge!</FancyLink>
+        {/* <FancyLink rel="noopener noreferrer" target="_blank" href="https://architech-inc.typeform.com/to/uYRkylb0" backgroundColor="#ffb819">Submit Your Idea!</FancyLink>
+        <FancyLink rel="noopener noreferrer" target="_blank" href="https://architech-inc.typeform.com/to/pbKXtRgy" backgroundColor="#004a97">Submit to a Mini Challenge!</FancyLink> */}
       </FancyLinks>
     </div>
   )
@@ -202,12 +202,12 @@ export class Landing extends React.Component {
   componentDidMount() {
     // const attend = document.getElementById("apply")
     // const volunteer = document.getElementById("volunteer")
-    const volunteer = document.getElementById("flyer")
+    // const volunteer = document.getElementById("flyer")
     // const mentor = document.getElementById("mentor")
 
     // this.setupPixelEvent(attend, "attend")
     // this.setupPixelEvent(volunteer, "volunteer")
-    this.setupPixelEvent(volunteer, "flyer")
+    // this.setupPixelEvent(volunteer, "flyer")
     // this.setupPixelEvent(mentor, "mentor")
   }
 
